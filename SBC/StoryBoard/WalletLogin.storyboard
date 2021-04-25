@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet Login View Controller-->
+        <scene sceneID="KI1-cb-PQU">
+            <objects>
+                <viewController storyboardIdentifier="WalletLoginViewController" id="ljo-QC-1B3" customClass="WalletLoginViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EQ9-as-tEs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squareBG" translatesAutoresizingMaskIntoConstraints="NO" id="UeL-86-S6g">
+                                <rect key="frame" x="124" y="0.0" width="290" height="384"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="384" id="lLi-t8-xbK"/>
+                                    <constraint firstAttribute="width" constant="290" id="n8G-dr-aBi"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R3I-BU-FSD">
+                                <rect key="frame" x="0.0" y="84" width="414" height="698"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiS-6Y-ebW">
+                                <rect key="frame" x="159" y="792" width="96" height="30"/>
+                                <state key="normal" title="Use Biometric"/>
+                                <connections>
+                                    <action selector="buttonBiometricAction:" destination="ljo-QC-1B3" eventType="touchUpInside" id="Cft-Jt-8Aj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6er-n8-hyN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wiS-6Y-ebW" firstAttribute="centerX" secondItem="6er-n8-hyN" secondAttribute="centerX" id="E61-eG-dLd"/>
+                            <constraint firstItem="UeL-86-S6g" firstAttribute="top" secondItem="EQ9-as-tEs" secondAttribute="top" id="J3H-Um-0wl"/>
+                            <constraint firstItem="6er-n8-hyN" firstAttribute="trailing" secondItem="R3I-BU-FSD" secondAttribute="trailing" id="Woe-mu-0XE"/>
+                            <constraint firstItem="R3I-BU-FSD" firstAttribute="top" secondItem="6er-n8-hyN" secondAttribute="top" constant="40" id="Wwz-zJ-64P"/>
+                            <constraint firstItem="wiS-6Y-ebW" firstAttribute="top" secondItem="R3I-BU-FSD" secondAttribute="bottom" constant="10" id="XJx-Hm-TJL"/>
+                            <constraint firstItem="6er-n8-hyN" firstAttribute="bottom" secondItem="wiS-6Y-ebW" secondAttribute="bottom" constant="40" id="hFM-Pc-JzK"/>
+                            <constraint firstItem="R3I-BU-FSD" firstAttribute="leading" secondItem="6er-n8-hyN" secondAttribute="leading" id="xpE-x7-Hyq"/>
+                            <constraint firstAttribute="trailing" secondItem="UeL-86-S6g" secondAttribute="trailing" id="ygm-qd-Y9a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZrC-1g-saI"/>
+                    <connections>
+                        <outlet property="buttonBiometric" destination="wiS-6Y-ebW" id="G4O-Ge-uth"/>
+                        <outlet property="buttonBiometricBottomConstraint" destination="hFM-Pc-JzK" id="vo0-GA-4Io"/>
+                        <outlet property="tableView" destination="R3I-BU-FSD" id="ZcP-VP-Cc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5k-3P-JpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.6956521739131" y="-510.26785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="squareBG" width="292" height="380"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

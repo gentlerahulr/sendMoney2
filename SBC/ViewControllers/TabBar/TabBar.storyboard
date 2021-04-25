@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="7Ai-2r-xON">
+            <objects>
+                <navigationController id="ZgY-3m-QeW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="discoverNormal" selectedImage="discoverActive" id="S8N-fA-xhl">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bm2-Tc-bl0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eYl-6P-oSQ" kind="relationship" relationship="rootViewController" id="5YK-7b-Xtg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmp-DP-phU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="1077"/>
+        </scene>
+        <!--Tips-->
+        <scene sceneID="4LD-f7-7pE">
+            <objects>
+                <navigationController id="hZa-e4-8dy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tips" image="tipsNormal" selectedImage="tipsActive" id="0sf-sO-9ta">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FW1-5h-cmq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFe-Et-pPQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="364"/>
+        </scene>
+        <!--Tabbar Controller-->
+        <scene sceneID="UN5-vb-wET">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBar" id="Soy-cm-gwO" customClass="TabbarController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kZA-IT-DqU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZgY-3m-QeW" kind="relationship" relationship="viewControllers" id="TpW-ZA-GpL"/>
+                        <segue destination="AGG-yG-8Fq" kind="relationship" relationship="viewControllers" id="ggH-6P-jkk"/>
+                        <segue destination="hZa-e4-8dy" kind="relationship" relationship="viewControllers" id="hLc-2V-TGN"/>
+                        <segue destination="zFA-aR-geR" kind="relationship" relationship="viewControllers" id="RDO-2d-oZ9"/>
+                        <segue destination="KXh-IO-VBe" kind="relationship" relationship="viewControllers" id="YXa-zC-RZE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KqF-CR-Wi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-845" y="364"/>
+        </scene>
+        <!--SearchLandingViewController-->
+        <scene sceneID="kQ0-Lc-2Ax">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchLandingViewController" id="zoM-1P-v0Q" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NPo-Ft-gay"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eP2-Qo-pv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="-5"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="q4h-DA-ZeR">
+            <objects>
+                <navigationController id="AGG-yG-8Fq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="searchNormal" selectedImage="searchActive" id="svh-oE-GhN">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vUE-y7-O3a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zoM-1P-v0Q" kind="relationship" relationship="rootViewController" id="b6F-To-uON"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLR-VU-7AT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="364"/>
+        </scene>
+        <!--DashBoardViewController-->
+        <scene sceneID="SJr-KW-8Jf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DashBoardViewController" storyboardName="Dashboard" referencedIdentifier="DashBoardViewController" id="SSo-6h-ON3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vSY-Fb-9r4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xG-8a-QwY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="1531"/>
+        </scene>
+        <!--UserProfileViewController-->
+        <scene sceneID="cjI-Xv-T73">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UserProfile" storyboardName="UserProfile" referencedIdentifier="UserProfileViewController" id="3pA-Ts-Px0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ebi-Ld-KYf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVs-gd-RiV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="1531"/>
+        </scene>
+        <!--LandingViewController-->
+        <scene sceneID="CWM-c2-eL4">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Discover" storyboardName="Discovery" referencedIdentifier="LandingViewController" id="eYl-6P-oSQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="V8i-sA-mhK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HtI-ok-GLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="1524"/>
+        </scene>
+        <!--Wallet-->
+        <scene sceneID="JU0-lH-8iT">
+            <objects>
+                <navigationController storyboardIdentifier="DashBoardNavViewController" navigationBarHidden="YES" id="zFA-aR-geR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wallet" image="walletNormal" selectedImage="walletActive" id="9lu-U3-nSX">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
+                    </tabBarItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" backIndicatorImage="icon-back-white" backIndicatorTransitionMaskImage="icon-back-white" id="PGx-db-4GE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="darkBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SSo-6h-ON3" kind="relationship" relationship="rootViewController" id="bwC-DF-lwd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bde-fD-r0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="1077"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="ih6-js-Nc6">
+            <objects>
+                <navigationController id="KXh-IO-VBe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="profileNormal" selectedImage="profileActive" id="foV-y9-Lyt">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mto-yV-h1P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3pA-Ts-Px0" kind="relationship" relationship="rootViewController" id="rho-Dr-JGa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUd-b7-dmj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="1077"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discoverActive" width="36" height="36"/>
+        <image name="discoverNormal" width="24" height="24"/>
+        <image name="icon-back-white" width="24" height="24"/>
+        <image name="profileActive" width="36" height="36"/>
+        <image name="profileNormal" width="24" height="24.333333969116211"/>
+        <image name="searchActive" width="36" height="36"/>
+        <image name="searchNormal" width="24" height="24"/>
+        <image name="tipsActive" width="36" height="36"/>
+        <image name="tipsNormal" width="24" height="24"/>
+        <image name="walletActive" width="36" height="36"/>
+        <image name="walletNormal" width="24" height="24"/>
+        <namedColor name="darkBlue">
+            <color red="0.090196078431372548" green="0.14509803921568629" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

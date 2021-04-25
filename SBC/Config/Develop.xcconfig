@@ -1,0 +1,7 @@
+//
+//  Develop.xcconfig
+//  SBC
+//
+
+#include "Pods/Target Support Files/Pods-SBC/Pods-SBC.develop.xcconfig"
+BASE_URL=niumpayqa.nium.com/proxy/api/v1

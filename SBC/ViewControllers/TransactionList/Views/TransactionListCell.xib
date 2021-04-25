@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="155" id="mf5-Il-6bI" customClass="TransactionListCell" customModule="ONZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mf5-Il-6bI" id="sp4-XY-r1R">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLo-BJ-VqG" customClass="CircleAvatarView" customModule="ONZ" customModuleProvider="target">
+                        <rect key="frame" x="20" y="24" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="YLo-BJ-VqG" secondAttribute="height" id="gpE-uB-qbD"/>
+                            <constraint firstAttribute="width" constant="40" id="lBU-YK-Z73"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Some Name"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Il-Oz-oro">
+                        <rect key="frame" x="76" y="24" width="168.5" height="81"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJl-Jp-4Ql">
+                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="19"/>
+                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                <color key="textColor" name="darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="32" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Njt-hg-l2A">
+                                <rect key="frame" x="0.0" y="27" width="0.0" height="32"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tna-DW-jcf">
+                                <rect key="frame" x="0.0" y="67" width="32" height="14"/>
+                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="12"/>
+                                <color key="textColor" name="darkBlueTint1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ S$ 11.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9p-NS-gN8">
+                        <rect key="frame" x="398" y="24" width="78" height="19"/>
+                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="16"/>
+                        <color key="textColor" name="darkBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g9p-NS-gN8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Il-Oz-oro" secondAttribute="trailing" constant="16" id="0eO-Rm-oxM"/>
+                    <constraint firstItem="8Il-Oz-oro" firstAttribute="top" secondItem="sp4-XY-r1R" secondAttribute="top" constant="24" id="9OA-Lz-ehU"/>
+                    <constraint firstItem="8Il-Oz-oro" firstAttribute="leading" secondItem="YLo-BJ-VqG" secondAttribute="trailing" constant="16" id="IcS-LW-PPn"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8Il-Oz-oro" secondAttribute="bottom" priority="999" id="if0-2J-t66"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="g9p-NS-gN8" secondAttribute="trailing" id="mkI-58-ijb"/>
+                    <constraint firstItem="g9p-NS-gN8" firstAttribute="top" secondItem="8Il-Oz-oro" secondAttribute="top" id="nlY-Uu-7fC"/>
+                    <constraint firstItem="YLo-BJ-VqG" firstAttribute="leading" secondItem="sp4-XY-r1R" secondAttribute="leadingMargin" id="q9F-WI-x7F"/>
+                    <constraint firstItem="YLo-BJ-VqG" firstAttribute="top" secondItem="8Il-Oz-oro" secondAttribute="top" id="xEC-Zd-4kg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amountLabel" destination="g9p-NS-gN8" id="0yP-77-aDh"/>
+                <outlet property="circleAvatar" destination="YLo-BJ-VqG" id="QhO-22-crB"/>
+                <outlet property="mainStack" destination="8Il-Oz-oro" id="obc-8b-Tth"/>
+                <outlet property="noteLabel" destination="Tna-DW-jcf" id="DLd-x5-39O"/>
+                <outlet property="tagsStack" destination="Njt-hg-l2A" id="FwF-bf-AXr"/>
+                <outlet property="transactionDescriptionLabel" destination="cJl-Jp-4Ql" id="T2c-nv-do1"/>
+            </connections>
+            <point key="canvasLocation" x="-53.623188405797109" y="-41.183035714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.090196078431372548" green="0.14509803921568629" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlueTint1">
+            <color red="0.40392156862745099" green="0.43529411764705883" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

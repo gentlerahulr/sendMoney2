@@ -1,0 +1,126 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Setup Circle CI"
+  before_all do
+    setup_circle_ci
+  end
+
+  desc "Build Production Environment"
+  lane :production do
+    import_certificate(
+      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
+      certificate_path: 'Certificates.p12',
+      certificate_password: ENV["CERTIFICATE_PASSWORD"] || "default"
+    )    
+    gym(
+      workspace: "SBC.xcworkspace",
+      scheme: "SBC",
+      export_xcargs: "-allowProvisioningUpdates",
+      export_method: "ad-hoc"
+    )
+  end
+
+  desc "Increase build number"
+  lane :buildbump do
+    clean_build_artifacts
+    version = get_version_number
+    build = increment_build_number
+    build_is_already_bumped = last_git_commit[:message].include? "[Fastlane Build increment]"
+    next if build_is_already_bumped
+
+    commit_version_bump(
+      xcodeproj:"SBC.xcodeproj",
+      message: "[ci skip] [Fastlane Build increment] v#{version} (#{build})",
+      force: true
+    )
+    push_to_git_remote(
+      remote_branch: "develop"
+    )
+  end
+
+  desc "Dev Build and Deploy"
+  lane :deploydev do
+    setup_circle_ci
+    import_certificate(
+      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
+      certificate_path: 'Certificates.p12',
+      certificate_password: ENV["CERTIFICATE_PASSWORD"] || "default"
+    )
+    gym(
+      workspace: "SBC.xcworkspace",
+      scheme: "Develop",
+      export_xcargs: "-allowProvisioningUpdates",
+      export_method: "ad-hoc",
+      output_directory: "Build",
+      output_name: "Develop"
+    )
+   firebase_app_distribution(
+      app: "1:440785410401:ios:f0a79ae5648c04c536cd20",
+      testers: "laurene.vidal@himumsaiddad.com",
+      release_notes: "SBC DEV",
+      firebase_cli_token: ENV["FIREBASE_TOKEN"],
+      ipa_path: "Build/Develop.ipa"
+    )
+  end
+
+  desc "Test deployment"
+  lane :deploytest do
+    setup_circle_ci
+    import_certificate(
+      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
+      certificate_path: 'Certificates.p12',
+      certificate_password: ENV["CERTIFICATE_PASSWORD"] || "default"
+    ) 
+    gym(
+      workspace: "SBC.xcworkspace",
+      scheme: "Staging",
+      export_xcargs: "-allowProvisioningUpdates",
+      export_method: "ad-hoc",
+      output_directory: "Build",
+      output_name: "Staging"
+    )
+    firebase_app_distribution(
+      app: "1:440785410401:ios:9ade7ebed662b79336cd20",
+      testers: "Laurene.vidal@himumsaiddad.com",
+      release_notes: "test distribution",
+      firebase_cli_token: ENV["FIREBASE_TOKEN"],
+      ipa_path: "Build/Staging.ipa"
+    )
+  end
+
+  #Doesnt currently work :(
+  # desc "Generate Build Notes"
+  # lane :generatebuildnotes do
+  #   commit_contains_version_bump = last_git_commit[:message].include? "[Fastlane Build increment]"
+  #   commit_count = 0
+  #   while commit_contains_version_bump do
+  #     commit_count++
+  #   end
+  #   changelog_from_git_commits(
+  #     commits_count: commit_count,
+  #     merge_commit_filtering: exclude_merges
+  #   )
+  #   puts lane_context[SharedValues::FL_CHANGELOG]
+  # end
+
+
+end

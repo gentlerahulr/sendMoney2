@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Manage Wallet View Controller-->
+        <scene sceneID="UzR-Xa-6tL">
+            <objects>
+                <viewController storyboardIdentifier="ManageWalletViewController" id="x82-d7-g7H" customClass="ManageWalletViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F1z-i1-9bS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tPm-Ym-LqB">
+                                <rect key="frame" x="0.0" y="76" width="414" height="194"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="pjh-Uc-K5I"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EfI-Xs-KW9">
+                                    <size key="itemSize" width="327" height="183"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x82-d7-g7H" id="qO8-rB-Yxh"/>
+                                    <outlet property="delegate" destination="x82-d7-g7H" id="bF0-jy-oko"/>
+                                </connections>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-Dt-4MI">
+                                <rect key="frame" x="24" y="294" width="366" height="0.0"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pl2-Ml-Nmr">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLi-VY-O7X">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="Add to Apple Wallet"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DhU-EG-esy"/>
+                                            <constraint firstItem="xLi-VY-O7X" firstAttribute="top" secondItem="pl2-Ml-Nmr" secondAttribute="top" id="Ld3-kg-Pbl"/>
+                                            <constraint firstAttribute="bottom" secondItem="xLi-VY-O7X" secondAttribute="bottom" id="Pa7-y7-Xst"/>
+                                            <constraint firstItem="xLi-VY-O7X" firstAttribute="leading" secondItem="pl2-Ml-Nmr" secondAttribute="leading" id="ex9-J1-G4b"/>
+                                            <constraint firstAttribute="trailing" secondItem="xLi-VY-O7X" secondAttribute="trailing" id="jIz-UN-FYM"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aa-8G-oh8">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctq-ad-laW">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="42"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="pZp-V9-AXI"/>
+                                                </constraints>
+                                                <state key="normal" image="Save to GPay"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Ctq-ad-laW" secondAttribute="bottom" id="7Zs-kL-e1C"/>
+                                            <constraint firstItem="Ctq-ad-laW" firstAttribute="leading" secondItem="2aa-8G-oh8" secondAttribute="leading" id="GeU-F1-PD4"/>
+                                            <constraint firstItem="Ctq-ad-laW" firstAttribute="top" secondItem="2aa-8G-oh8" secondAttribute="top" id="ZU8-XZ-lo7"/>
+                                            <constraint firstAttribute="height" constant="42" id="sSO-gT-gYn"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ctq-ad-laW" secondAttribute="trailing" id="unA-85-k5Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="7P9-IL-KEh"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rpy-2c-Qvn">
+                                <rect key="frame" x="0.0" y="294" width="414" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x82-d7-g7H" id="Eat-WE-RBm"/>
+                                    <outlet property="delegate" destination="x82-d7-g7H" id="Ljo-lg-59W"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bYs-zt-KSe"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tPm-Ym-LqB" firstAttribute="trailing" secondItem="bYs-zt-KSe" secondAttribute="trailing" id="16S-iC-RyH"/>
+                            <constraint firstItem="Rpy-2c-Qvn" firstAttribute="top" secondItem="cl2-Dt-4MI" secondAttribute="bottom" id="9vW-5m-p7w"/>
+                            <constraint firstItem="Rpy-2c-Qvn" firstAttribute="leading" secondItem="bYs-zt-KSe" secondAttribute="leading" id="Aeq-45-KOP"/>
+                            <constraint firstItem="tPm-Ym-LqB" firstAttribute="leading" secondItem="bYs-zt-KSe" secondAttribute="leading" id="Kkd-Gb-xJl"/>
+                            <constraint firstItem="Rpy-2c-Qvn" firstAttribute="trailing" secondItem="bYs-zt-KSe" secondAttribute="trailing" id="PFZ-AQ-SEk"/>
+                            <constraint firstItem="cl2-Dt-4MI" firstAttribute="top" secondItem="tPm-Ym-LqB" secondAttribute="bottom" constant="24" id="Val-Ez-FpH"/>
+                            <constraint firstItem="bYs-zt-KSe" firstAttribute="trailing" secondItem="cl2-Dt-4MI" secondAttribute="trailing" constant="24" id="W1T-0l-YbV"/>
+                            <constraint firstItem="cl2-Dt-4MI" firstAttribute="leading" secondItem="bYs-zt-KSe" secondAttribute="leading" constant="24" id="Wnv-Xn-xz6"/>
+                            <constraint firstItem="Rpy-2c-Qvn" firstAttribute="bottom" secondItem="bYs-zt-KSe" secondAttribute="bottom" id="flf-RO-kQt"/>
+                            <constraint firstItem="tPm-Ym-LqB" firstAttribute="top" secondItem="F1z-i1-9bS" secondAttribute="top" constant="76" id="gV4-eG-pDL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0VS-aW-1Sb"/>
+                    <connections>
+                        <outlet property="CardCollectionView" destination="tPm-Ym-LqB" id="I1N-KF-Qoj"/>
+                        <outlet property="collectionViewTop" destination="gV4-eG-pDL" id="EE7-ZO-tqx"/>
+                        <outlet property="tableView" destination="Rpy-2c-Qvn" id="I7n-yS-Ra1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Si8-lD-wuA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123.18840579710145" y="-50.223214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jyE-fQ-beS">
+            <objects>
+                <navigationController storyboardIdentifier="ManageWalletNavViewController" automaticallyAdjustsScrollViewInsets="NO" id="a3v-m7-R7d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cf5-5F-0n8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x82-d7-g7H" kind="relationship" relationship="rootViewController" id="J7v-vU-2rd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1W-xT-lev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786.95652173913049" y="-50.223214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Add to Apple Wallet" width="128" height="128"/>
+        <image name="Save to GPay" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

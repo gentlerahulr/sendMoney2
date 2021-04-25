@@ -1,0 +1,378 @@
+//
+//  Localizable.strings
+//  SBC
+
+// Login - SIgnUP
+
+"NAME" = "Name";
+"PASSWORD" = "Password";
+"LOGIN" = "Log in >";
+"FORGOT_YOUR_PASSWORD" = "Forgot your password?";
+"DO_NOT_HAVE_ACCESS" = "Do not have access?";
+"RELOGIN_MESSAGE" = "Please re-login using your new password.";
+"ENTER_OTP_MESSAGE" = "ENTER THE 6-DIGIT CODE SENT TO \nYOU VIA EMAIL";
+"RESEND_OTP" = "Resend OTP";
+"CONFIRM" = "CONFIRM";
+"NEW_PASSWORD" = "New password";
+"CONFIRM_PASSWORD" = "Confirm password";
+"REGISTER" = "Register";
+"REGISTER_WITH_EMAIL" = "Register with email";
+"EMAIL_ADDRESS" = "Email address";
+"UPDATE_PASSWORD" = "Update password";
+"PEASE_ENSURE_PASSWORD" = "Please ensure your password";
+"AT_Least_8_CHARATER_LONG" = "• is at least 8 characters long";
+"AT_Least_1_LOWER_CASE" = "• contains at least 1 lower case";
+"AT_Least_1_UPPER_CASE" = "• contains at least 1 upper case";
+"PASSWORD_RECOVERY_DESCRIPTION" = "Forgot your password? No problem! Enter your email below and we will send you password recovery instructions.";
+"PASSWORD_RECOVERY_TITTLE"= "Password recovery";
+"PROCEED" = "Proceed";
+"NEXT" = "Next";
+"MOBILE_NUMBER" = "Mobile number";
+"YOUR_MOBILE_NUMBER" = "Your mobile number";
+"WALLET_REGISTARTION_DESCRIPTION" = "We need your mobile number to verify your identity and register for your ONZ wallet.";
+"VERIFY_VERIFIACTION_CODE" = "Enter the verification code";
+"VERIFY_VERIFIACTION_CODE_DESC" = "We've sent an SMS to +%@%@ with a verification code. If you don't see it within a few minutes, please try again.";
+"RESEND_CODE" = "Resend code";
+"SUCCESS_TITLE" = "Success";
+"CREATE_NEW_PIN" = "Create a new PIN ";
+"CONFIRM_PIN" = "Confirm PIN   ";
+
+"ENTER_NEW_PASSWORD_MESSAGE" = "New password";
+"ENTER_CONFIRM_PASSWORD_MESSAGE" = "Confirm new password";
+"PASSWORD_DOES_NOT_MATCH_MESSAGE" = "Password does not match";
+"CREATE_NEW_PASSWORD" = "Create new password";
+"CHANGE_PASSWORD" = "CHANGE PASSWORD";
+"SET_PIN" = "SET PIN";
+"UPDATE_PIN" = "UPDATE PIN";
+"PLEASE_ENTER_SIX_DIGIT_PIN" = "Set a 6-digit PIN";
+
+"PROCEED_TO_DASHBOARD" = "PROCEED TO DASHBOARD";
+"CARD_ACTIVATION_MESSAGE" = "Your card has been activated and\nlinked successfully ";
+"CARD_NOT_ACTIVATED_MESSAGE" = "Your card has been linked successfully but\n not activated yet";
+"ENTER_CARD_DETAILS" = "ENTER CARD DETAILS";
+"EXCEEDS_TOPUP" = "Amount exceeds the daily top up limit";
+"REVIEW_WITHDRAW_INFO" = "By clicking Authorize Transfer, I hereby confirm that I've reviewed the transaction details and I'll fund the transaction from my wallet.";
+
+// validations String
+"MSG_EMPTY_Mobile" = "Mobile field is required";
+"MSG_EMPTY_EMAIL"            = "Email Address is required";
+"Email_format_is_incorrect" = "This is not a valid email address";
+"MSG_EMPTY_Name"            =  "Name is required";
+"MSG_EMPTY_NEW_PASSWORD"     = "Password is required";
+"MSG_EMPTY_CONFIRM_PASSWORD"  = "Confirm Password is required";
+"MSG_CONFIRM_PASSWORD_NOT_MATCH_MSG_TEXT" = "Password doesn't match, please try again";
+"MSG_PASSWORD_VALIDATION_FAILED" =  "Please ensure your password" ;
+"MOBILE_NO_NOTVALID" = "This mobile number is not valid, please try again";
+"EMAIL_NOT_REGISTERED" = "This is not a registered email address";
+"ENTER_VALID_NAME" = "Please enter valid name";
+"PIN_NOT_MATCHED"= "PINs do not match, please try again ";
+
+//Biometrics
+"biometrics_label_desc" = "You can use biometrics to log in to your wallet more quickly. You can set your preferences below.";
+"biometrics_label_touchId" = "Enable Touch ID";
+"biometrics_label_faceId" = "Enable Face ID";
+"biometrics_btn_continue" = "Continue";
+"biometrics_reason" ="Authenticate correctly to access wallet";
+"biometrics_fallBackTitle" = "Please authenticate with biometric to access wallet";
+"biometrics_auth_success_msg" =  "Authenticated succesfully!";
+"biometrics_auth_failure_msg" = "Biometrics authentication failure.";
+//Notification
+"notification_label_title" = "Seems like you still need to verify your email";
+"notification_label_desc" = "Before we can create a wallet we need to verify your email. We have sent a verification code to your email.";
+"notification_btn_resend_email" = "Resend Verification Email";
+"wallet_success_label_title" = "Nice! Your wallet       registration is complete";
+"wallet_success_label_desc" = "We will need to run some checks before \nyou can use your virtual wallet but it shouldn’t take long. We will notify you once it is done.";
+"wallet_success_btn" = "Back to home";
+//OTP
+"otp_incorrect_error_message" = "Verification code is not correct, try again";
+
+// Wallet
+"wallet.login.pin.title" = "Enter your PIN";
+"wallet.login.incorrect.pin.meesage" = "Incorrect Pin";
+
+// Dashboard
+"dashboard.balance" = "Balance";
+"dashboard.action.topup" = "Top up";
+"dashboard.action.withdraw" = "Withdraw";
+
+// Transaction list
+"transactionlist.title" = "Transaction History";
+"transactionlist.tag.topup" = "Top up";
+"transactionlist.search.placeholder" = "Search";
+"transactionlist.search.tags" = "Tags";
+"transactionlist.search.tags.viewmore" = "View more";
+"transactionlist.placeholder.title.notransactions" = "You have no transactions yet!";
+"transactionlist.placeholder.message.notransactions" = "Start using your wallet now and view your most recent transactions here.";
+"transactionlist.placeholder.title.nosearchedtransactions" = "No results found.";
+"transactionlist.placeholder.message.nosearchedtransactions" = "Sorry, there are no results matching your search.";
+
+// Transaction Details
+"transactiondetail.button.tags" = "Tags";
+"transactiondetail.button.addtags" = "Add tags";
+"transactiondetail.button.edittags" = "Edit tags";
+"transactiondetail.button.notes" = "Notes";
+"transactiondetail.button.addnotes" = "Add notes";
+"transactiondetail.button.editnotes" = "Edit notes";
+"transactiondetail.edit.notes.headline" = "Add a note to keep track of your spending";
+"transactiondetail.edit.charactercount" = "Maximum of %d characters";
+"transactiondetail.edit.save" = "Save";
+"transactiondetail.edit.error.exceedlimit" = "You’ve exceeded the maximum number of characters";
+
+//API Alert Error Response
+"alert.offline.title" = "Offline";
+"alert.offline.desc" = "Internet connection appears to be offline";
+"alert.timeout.title" = "Request Timeout";
+"alert.timeout.desc" = "The request timed out, check your network connection";
+"alert.server.error.title" = "Server Error";
+"alert.server.error.desc" = "A server with the specified hostname could not be found";
+"alert.error.social.data.desc" = "To proceed with registration/login email & name is mandatory";
+"alert.error.social.data.title" = "Required data not found";
+"alert.email.already.exist" = "This account is already registered . Please Login.";
+"alert.biometric.enable.title" = "Biometric authentication blocked due to multiple wrong attempts, Please lock & unlock the phone to use biometric";
+
+
+//Common Button
+"button.title.Next" = "Next";
+"button.title.login" = "Log in";
+"button.title.back_to_wallet" = "Back to wallet";
+"button.title.use_biometrics" = "Use biometrics";
+"button.title.forgot_your_pin" = "Forgot your PIN?";
+"button.title.continue" = "Continue";
+"button.title.accept" = "Accept";
+"button.title.go_to_wallet" = "Go to wallet";
+"button.title.back_to_home" = "Back to Home";
+"button.title.try_again" = "Try again";
+"button.title.enter_new_pin" = "Enter new PIN";
+"button.title.yes" = "Yes";
+"button.title.no" = "No";
+"button.title.ok" = "OK";
+"button.title.topUP" = "Back to top up";
+"button.title.withdraw" = "Back to withdraw funds";
+
+//Notification
+"notification.password.update.message" = "Hooray! Your password has been updated.";
+"notification.pin.update.message" = "Hooray! Your PIN has been updated.";
+"notification.myinfo.failure.title" = "MyInfo verification failed";
+"notification.myinfo.failure.desc" = "Your MyInfo compliance remark is %@";
+"notification.mobile.update.message" = "Hooray! Your mobile number has been updated.";
+
+
+//Update Mobile
+"Update.mobile.desc" = "We will require your mobile number to be able to verify your identity.";
+"UPDATE.VERIFICATION.DESC" = "You should receive a text message with a verification code to your mobile number:\n %@";
+
+//Forgot PIN:
+"forgot.pin.title" = "We'll send you a code to reset your wallet PIN";
+"forgot.pin.desc" = "To reset the PIN for your virtual wallet, we will require your mobile number to send you a verification code.";
+//Playlist
+"playlist_btn_addDescription" = "Add a catchy description to help your list stand out";
+"playlist_label_createdBy" = "Created by";
+"playlist_label_places" = "places";
+"playlist_label_place" = "place";
+"likedVenues_label_title" = "Liked places";
+"likedVenues_label_subtitle" = "Places you like appear here";
+"list_deleted_title" = "List deleted";
+"list_deleted" = "%@ deleted.";
+
+"place_deleted_title" = "Place removed";
+"place_deleted" = "%@ removed from %@.";
+
+//Edit Playlist
+"edit_list_rename" = "Rename list";
+"edit_list_add_subtitle" = "Add subtitle";
+"edit_list_edit_subtitle" = "Edit subtitle";
+"edit_list_add_description" = "Add description";
+"edit_list_edit_description" = "Edit description";
+"edit_list_delete" = "Delete list";
+
+"edit_description_screentitle" = "List description";
+"edit_description_title" = "Let's add some more detail";
+"edit_description_minLength_error" = "Your description should be at least 3 characters long";
+"edit_description_oneLetter_error" = "Your description should have at least 1 letter";
+"edit_description_subtitle" = "Maximum of 200 characters";
+"edit_subtitle_screentitle" = "List subtitle";
+"edit_subtitle_title" = "Let's give your list a subtitle";
+"edit_subtitle_subtitle" = "Maximum of 45 characters";
+"edit_subtitle_minLength_error" = "Your subtitle should be at least 3 characters long";
+"edit_subtitle_oneLetter_error" = "Your subtitle should have at least 1 letter";
+"edit_newList_screentitle" = "New list";
+"edit_title_screentitle" = "List name";
+"edit_title_title" = "Give your list a snappy name";
+"edit_title_subtitle" = "Maximum of 50 characters";
+"edit_title_minLength_error" = "Your list name should be at least 3 characters long";
+"edit_title_oneLetter_error" = "Your list name should have at least 1 letter";
+"edit_venueCaption_screentitle" = "Place caption";
+"edit_venueCaption_title" = "Add a caption for this place";
+"edit_venueCaption_subtitle" = "Maximum of 250 characters";
+"edit_venueCaption_minLength_error" = "Your caption should be at least 3 characters long";
+"edit_venueCaption_oneLetter_error" = "Your caption should have at least 1 letter";
+"edit_button_save" = "Save changes";
+
+"delete_list_title" = "Delete list";
+"delete_list_subtitle" = "You're about to delete this list. This action can't be undone.";
+"delete_list_button_title" = "Delete list";
+"delete_venue_title" = "Remove from list";
+"delete_venue_subtitle" = "You're about to remove this place from this list. This action can't be undone.";
+"delete_venue_button_title" = "Remove place";
+"delete_playlist_venue_title" = "Delete list";
+"delete_playlist_venue_subtitle" = "You're about to remove the only place from this list. This will delete the list itself. This action can't be undone.";
+"delete_playlist_venue_button_title" = "Delete list";
+"delete_list_cancel_button" = "Cancel";
+
+//Create list
+"addToList_title" = "Add to list";
+"create_list_title" = "Create new list";
+"create_list_no_playlist" = "It's time to create your first list, exciting! Tap \"Create new list\" below to get started.";
+"create_list_addSubtitle_button" = "Add a subtitle";
+"create_list_addDescription_button" = "Add a description";
+"create_list_create_button" = "Create list";
+"create_list_subtitle_button" = "List subtitle";
+"create_list_description_button" = "List description";
+"addTo_list_showMore_button" = "View all";
+"addTo_list_showLess_button" = "Show less";
+"addTo_list_header" = "My list";
+"addTo_list_success_title" = "Place added";
+"addTo_list_success" = "%@ successfully added to %@";
+"addTo_list_adreadyAdded" = "Already on this playlist";
+
+//Venue
+"addCaption_title" = "Add caption";
+"editCaption_title" = "Edit caption";
+"removeFromList_title" = "Remove from this list";
+"venue_read_more" = "Read more";
+"venue_read_less" = "Read less";
+"venue_deals" = "Deals";
+"venue_viewMenu" = "View menu";
+"tags_view_all" = "View all";
+"tags_show_less" = "Show less";
+"deals_view_all" = "Load more";
+"deals_show_less" = "Show less";
+"reviews_show_less"="Show less";
+"reviews_view_all"="Load more";
+"reviews_last_updated"="Last updated";
+"open_hours_title" = "Open hours";
+
+//Contact Sheet
+"contactsheet_title" = "Contacts and booking";
+"contactsheet_facebook" = "Facebook";
+"contactsheet_instagram" = "Instagram";
+"contactsheet_website" = "Website";
+"contactsheet_booking" = "Book a table";
+
+
+"tnc.title.label" = "Terms and conditions";
+"tnc.accept.label" = "I understand and accept these Terms and Conditions to use.";
+
+//popUpStrings
+"ARE_YOU_SURE" = "Are you sure?";
+"WALLET_REGISTRATION_PROGRESS_DESC"= "Don't worry. You will be resumed from where you left previously.";
+"YES_ACTION" = "Yes, Go Back";
+"STAY_CONTINUE" = "Stay and Continue";
+"popup.poor.connection.title" = "Poor Connection";
+"popup.poor.connection.desc" = "We are unable to proceed with your Singpass login due to network issues. Please check your interne connection.";
+
+"update.pin.enter.new.pin.title" = "Enter new PIN";
+"update.pin.enter.current.pin.title" = "Enter current PIN";
+"update.pin.confirm.new.pin.title" = "Confirm new PIN";
+"update.pin.screen.title" = "Update PIN";
+
+"pin.invalid.pin.title" = "Incorrect Pin, please try again";
+"manage.wallet.screen.title" = "Manage wallet";
+
+"myinfo.error.already.registered.user" = "The account that you used is already registered.";
+"myinfo.login.desc" = "Get Instant Approval & Start Transferring without further ado! No supporting       documents required.";
+
+"SHOW" = "Show";
+"HIDE" = "Hide";
+"UPDATE" = "Update";
+"TERMS_AND_CONDITIONS" = "Terms and conditions";
+"CHANGE_PIN" = "Change PIN";
+"ENABLE_FACE_ID" = "Enable Face ID";
+"ENABLE_TOUCH_ID" = "Enable Touch ID";
+"CARD_NUMBER_SUCCESSFULLY_COPIED" = "Card number copied!";
+"top.up.uen.copy.message" = "UEN copied!";
+"top.up.amount.copy.message" = "Amount copied!";
+"top.up.reference.code.copy.message" = "Reference Code copied!";
+
+//TopUP
+"top.up.screen.title" = "Top up";
+"Image_SAVED" = "QR Image is saved to the Photos";
+"Image_SAVE_FAILED" = "QR Image failed to save in the Photos";
+"top.up.max.error.message" = "Amount exceeds the daily topup limit";
+"top.up.min.error.message" = "Top up minimum limit is S$%.0f.";
+"withdraw.min.error.message" = "Withdraw minimum limit is S$%.0f.";
+"top.up.QRFailed.error.message" = "Failed to generate QR code, Please try again!";
+"PAY_NOW_BOTTOM_DESC" = "By clicking Authorize Transfer, I hereby confirm that I've reviewed the transaction details and I'll fund the transaction from my own bank account.";
+"withdraw.succes.card" = "Hooray! $%@ has been credited to your bank account.";
+"transaction.failure.card" = "Something went wrong during the transaction, please try again.";
+"CARD_BOTTOM_DESC" = "By clicking Authorize Transfer, I hereby confirm that I've reviewed the transaction details and I'll fund the transaction from my credit card.";
+"CARD_CVV_INFO" = "You can find your 3-digit CVV code at the back of your card.";
+"ADD_NEW_CARD" = "Add a new card";
+"top.up.success.message" = "Hooray! $%@ has been credited to your wallet.";
+"top.up.cvv.tooltip.message" = "You can find your \n3-digit CVV code at the back of your card.";
+"add.card.expiry.date.label" = "Expiry date";
+"add.card.expiry.date.mmyy.label" = "MM/YY";
+"withdraw.success.message" = "Withdrawal complete";
+
+"TOP_METHOD" = "Top up method";
+"SELECT_CARD" = "Select card";
+"PAYNOW" = "PayNow";
+"CARD" = "Card";
+"card.holder" = "Card hodler name";
+"card.number" = "Card number";
+"card.expiry" = "Expiry date";
+"card.cvv" = "CVV";
+
+//Withdraw
+"WITHDRAW_BOTTOM_DESC" = "By clicking Authorize Transfer, I hereby confirm that I've reviewed the transaction details and I'll fund the transaction from my wallet.";
+"ADD_NEW_ACCOUNT" = "New bank account";
+"SELECT_ACCOUNT" = "Select bank account";
+"withdraw.balance.error.message" = "Amount exceeds current balance";
+"withdraw.screen.title" = "Withdraw funds";
+"account.name" = "Full name";
+"account.number" = "Account number";
+"bank.name" = "Bank";
+"swift.code" = "SWIFT code";
+"select.bank" = "Select bank";
+"bank.type" = "Select bank type";
+"BANK_ACC" = "Bank account";
+"withdraw.bank.search.no.result.found" = "No results found";
+"withdraw.error.invalid.bank" = "Invalid bank name";
+//Your likes
+"YOUR_LIKES"="Your likes";
+"LISTS_YOU_HAVE_LIKED"="Lists you've liked";
+"VENUES_YOU_HAVE_LIKED"="Places you've liked";
+"YOUR_LIKES_VIEW_ALL" = "View all";
+"YOUR_LIKES_EMPTY_TITLE" = "There's nothing here yet!";
+"YOUR_LIKES_EMPTY_DESC" = "Looks like you've not liked any places or lists yet. Start exploring below to find the best Singapore has to offer.";
+"YOUR_LIKES_EMPTY_BUTTON" = "Start exploring";
+
+//Landing
+"EXPLORE_SINGAPORE"="Explore Singapore";
+"FOOD_DRINKS"="Food & drinks";
+
+//Error
+"error_popup_title" = "Error";
+"error_popup_message" = "Oops, something went wrong, please try again";
+
+//Alert
+"screen.shot" = "Beware, you took the screen shot!";
+
+//Search
+"search_view_all_places" = "View all places";
+"search_location_denied_title" = "Location access denied";
+"search_location_denied_message" = "We need access to your location to show restaurants and bars near you";
+"clear_all" = "Clear all";
+
+//All Places
+"ALL_PLACES" = "All places";
+"RELEVANCE" = "Relevance";
+"LIKES" = "Likes";
+"RATING" = "Rating";
+"DISTANCE" = "Distance";
+"PRICE_DESC" = "Price (high to low)";
+"PRICE_ASC" = "Price (low to high)";
+"SORT_BY" = "Sort by";
+
+
+

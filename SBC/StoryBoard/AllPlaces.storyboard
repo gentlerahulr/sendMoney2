@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Places View Controller-->
+        <scene sceneID="i7F-cL-Jpr">
+            <objects>
+                <viewController storyboardIdentifier="AllPlacesViewController" id="MV1-j1-8rY" customClass="PlacesViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hWV-ez-kso">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvx-m6-1wY">
+                                <rect key="frame" x="283" y="108" width="107" height="24"/>
+                                <state key="normal" title="Relevance" image="coreIconChevDown">
+                                    <color key="titleColor" name="darkBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="sortButtonTapped:" destination="MV1-j1-8rY" eventType="touchUpInside" id="KTX-XG-beH"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kl7-Nk-5k0">
+                                <rect key="frame" x="24" y="156" width="414" height="740"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WHu-Hl-vW3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kl7-Nk-5k0" firstAttribute="trailing" secondItem="WHu-Hl-vW3" secondAttribute="trailing" constant="24" id="5eX-R3-egx"/>
+                            <constraint firstItem="WHu-Hl-vW3" firstAttribute="trailing" secondItem="Hvx-m6-1wY" secondAttribute="trailing" constant="24" id="QFm-ZO-Fhp"/>
+                            <constraint firstItem="kl7-Nk-5k0" firstAttribute="top" secondItem="Hvx-m6-1wY" secondAttribute="bottom" constant="24" id="VKP-0r-Clz"/>
+                            <constraint firstAttribute="bottom" secondItem="kl7-Nk-5k0" secondAttribute="bottom" id="dvm-4s-mfL"/>
+                            <constraint firstItem="kl7-Nk-5k0" firstAttribute="leading" secondItem="WHu-Hl-vW3" secondAttribute="leading" constant="24" id="oGf-lj-kK8"/>
+                            <constraint firstItem="Hvx-m6-1wY" firstAttribute="top" secondItem="WHu-Hl-vW3" secondAttribute="top" constant="64" id="pPU-Ai-O4Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sortButton" destination="Hvx-m6-1wY" id="9NT-Sv-Ey7"/>
+                        <outlet property="tableView" destination="kl7-Nk-5k0" id="9XS-V5-Zpj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCO-Ur-Bvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="192.85714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coreIconChevDown" width="24" height="24"/>
+        <namedColor name="darkBlue">
+            <color red="0.090196078431372548" green="0.14509803921568629" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

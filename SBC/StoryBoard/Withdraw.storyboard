@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="KEf-N4-lZw">
+            <objects>
+                <navigationController storyboardIdentifier="WithdrawNavViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="3Mq-Zb-8d4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bNK-ud-poB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ljZ-r1-fAD" kind="relationship" relationship="rootViewController" id="QWc-Gj-evi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJu-6e-zbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="-48"/>
+        </scene>
+        <!--Withdraw Amount View Controller-->
+        <scene sceneID="x0d-3C-VWv">
+            <objects>
+                <viewController storyboardIdentifier="WithdrawAmountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ljZ-r1-fAD" customClass="WithdrawAmountViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="phr-wA-R5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zAq-60-Hjp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="748"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFe-PL-4m3">
+                                <rect key="frame" x="28" y="794" width="358" height="48"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="yfU-Sx-GGN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.22523280979999999" green="0.27987313270000003" blue="0.43463468550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Next_DidTapped:" destination="ljZ-r1-fAD" eventType="touchUpInside" id="C50-EE-DN1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="61z-Mn-3fz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zAq-60-Hjp" firstAttribute="top" secondItem="61z-Mn-3fz" secondAttribute="top" id="1V0-mU-try"/>
+                            <constraint firstItem="61z-Mn-3fz" firstAttribute="trailing" secondItem="zAq-60-Hjp" secondAttribute="trailing" id="2Yd-au-V69"/>
+                            <constraint firstItem="61z-Mn-3fz" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JFe-PL-4m3" secondAttribute="bottom" constant="20" id="6FW-RP-LAw"/>
+                            <constraint firstItem="JFe-PL-4m3" firstAttribute="leading" secondItem="61z-Mn-3fz" secondAttribute="leading" constant="28" id="ENC-H2-I2D"/>
+                            <constraint firstItem="JFe-PL-4m3" firstAttribute="top" secondItem="zAq-60-Hjp" secondAttribute="bottom" constant="2" id="ISO-Pf-l6p"/>
+                            <constraint firstAttribute="bottom" secondItem="JFe-PL-4m3" secondAttribute="bottom" priority="999" constant="20" id="PdS-yg-Lta"/>
+                            <constraint firstItem="61z-Mn-3fz" firstAttribute="trailing" secondItem="JFe-PL-4m3" secondAttribute="trailing" constant="28" id="a9N-TR-dMI"/>
+                            <constraint firstItem="zAq-60-Hjp" firstAttribute="leading" secondItem="61z-Mn-3fz" secondAttribute="leading" id="p6M-vc-1V9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q7f-lv-JhI"/>
+                    <connections>
+                        <outlet property="nextButton" destination="JFe-PL-4m3" id="CGP-u7-19H"/>
+                        <outlet property="nextButtonBC" destination="PdS-yg-Lta" id="CG3-KF-XCb"/>
+                        <outlet property="tableView" destination="zAq-60-Hjp" id="4L9-KD-q7f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vN-wu-PeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.91304347826087" y="-48.214285714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Medium.ttf">
+            <string>DMSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ManageWalletTnCCell" customModule="ONZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOD-vf-Eay">
+                        <rect key="frame" x="24" y="2" width="272" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="XVS-o0-dJ4"/>
+                            <constraint firstAttribute="height" constant="18" id="zgL-yJ-cKb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="13"/>
+                        <color key="textColor" red="0.40392156862745099" green="0.43529411764705883" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QOD-vf-Eay" secondAttribute="trailing" constant="24" id="LGb-Vb-Wug"/>
+                    <constraint firstItem="QOD-vf-Eay" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Rqk-IF-6rF"/>
+                    <constraint firstItem="QOD-vf-Eay" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="krx-sb-aJ1"/>
+                    <constraint firstAttribute="bottom" secondItem="QOD-vf-Eay" secondAttribute="bottom" constant="13" id="w02-aP-gJy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tncLabel" destination="QOD-vf-Eay" id="8yN-z5-naP"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="137"/>
+        </tableViewCell>
+    </objects>
+</document>

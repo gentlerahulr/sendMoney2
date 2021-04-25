@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AmountCell" rowHeight="209" id="KGk-i7-Jjw" customClass="AmountCell" customModule="ONZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="209"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI1-qe-yfG">
+                        <rect key="frame" x="28" y="103" width="23" height="32"/>
+                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="17"/>
+                        <color key="textColor" red="0.22523280979999999" green="0.27987313270000003" blue="0.43463468550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S$ 84.60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-Xj-t8F">
+                        <rect key="frame" x="71" y="159" width="60" height="18.5"/>
+                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="14"/>
+                        <color key="textColor" red="0.22523280979999999" green="0.27987313270000003" blue="0.43463468550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-0x-0LK">
+                        <rect key="frame" x="28" y="155" width="38" height="26"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onz" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ohc-c1-SzL">
+                                <rect key="frame" x="4" y="7" width="30" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="1yu-2J-sme"/>
+                                    <constraint firstAttribute="height" constant="12" id="tLf-CQ-Pnf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.96470588239999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ohc-c1-SzL" firstAttribute="leading" secondItem="QHC-0x-0LK" secondAttribute="leading" constant="4" id="NGV-mQ-q2w"/>
+                            <constraint firstAttribute="trailing" secondItem="Ohc-c1-SzL" secondAttribute="trailing" constant="4" id="S9e-Cy-FYF"/>
+                            <constraint firstAttribute="bottom" secondItem="Ohc-c1-SzL" secondAttribute="bottom" constant="7" id="bPU-2t-ckv"/>
+                            <constraint firstItem="Ohc-c1-SzL" firstAttribute="top" secondItem="QHC-0x-0LK" secondAttribute="top" constant="7" id="hzn-eq-zrU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount exceeds current balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrE-kp-OFA">
+                        <rect key="frame" x="28" y="186" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="k7J-Y8-9Nb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-j8-JCn">
+                        <rect key="frame" x="28" y="145" width="350" height="1"/>
+                        <color key="backgroundColor" red="0.4039215686" green="0.43529411759999997" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nFQ-Tv-xIk"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00.00" textAlignment="natural" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="MMO-jF-K9Z" customClass="JVFloatLabeledTextField">
+                        <rect key="frame" x="56" y="103" width="322" height="44"/>
+                        <color key="tintColor" name="darkBlue"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="NmU-dY-Az4"/>
+                        </constraints>
+                        <color key="textColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="35"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                <color key="value" red="0.4039215686" green="0.43529411759999997" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                <color key="value" red="0.4039215686" green="0.43529411759999997" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                <real key="value" value="-20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                <real key="value" value="-28"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelReductionRatio">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                <real key="value" value="-5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dK0-j8-JCn" firstAttribute="leading" secondItem="LI1-qe-yfG" secondAttribute="leading" id="46B-LJ-bXj"/>
+                    <constraint firstAttribute="trailing" secondItem="dK0-j8-JCn" secondAttribute="trailing" constant="28" id="9Qm-bw-PE9"/>
+                    <constraint firstItem="dK0-j8-JCn" firstAttribute="leading" secondItem="MMO-jF-K9Z" secondAttribute="leading" constant="-28" id="AL4-sk-mUK"/>
+                    <constraint firstItem="MMO-jF-K9Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="103" id="BbO-Zb-0PE"/>
+                    <constraint firstItem="dK0-j8-JCn" firstAttribute="top" secondItem="MMO-jF-K9Z" secondAttribute="bottom" constant="-2" id="For-bz-Ryb"/>
+                    <constraint firstItem="dK0-j8-JCn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="Jrb-i2-MUN"/>
+                    <constraint firstItem="MMO-jF-K9Z" firstAttribute="top" secondItem="LI1-qe-yfG" secondAttribute="top" id="Oe8-cf-jap"/>
+                    <constraint firstItem="zLn-Xj-t8F" firstAttribute="centerY" secondItem="QHC-0x-0LK" secondAttribute="centerY" id="OpR-7o-QeF"/>
+                    <constraint firstItem="MMO-jF-K9Z" firstAttribute="leading" secondItem="LI1-qe-yfG" secondAttribute="trailing" constant="5" id="QdT-Ke-HiZ"/>
+                    <constraint firstItem="QHC-0x-0LK" firstAttribute="top" secondItem="MMO-jF-K9Z" secondAttribute="bottom" constant="8" id="RUg-7T-YgE"/>
+                    <constraint firstItem="dK0-j8-JCn" firstAttribute="trailing" secondItem="MMO-jF-K9Z" secondAttribute="trailing" id="UD2-CV-hTX"/>
+                    <constraint firstItem="zLn-Xj-t8F" firstAttribute="leading" secondItem="QHC-0x-0LK" secondAttribute="trailing" constant="5" id="VND-1X-gec"/>
+                    <constraint firstAttribute="bottom" secondItem="xrE-kp-OFA" secondAttribute="bottom" constant="2" id="cFa-9F-slD"/>
+                    <constraint firstItem="xrE-kp-OFA" firstAttribute="top" secondItem="QHC-0x-0LK" secondAttribute="bottom" constant="5" id="dfR-GH-mcE"/>
+                    <constraint firstItem="dK0-j8-JCn" firstAttribute="top" secondItem="LI1-qe-yfG" secondAttribute="bottom" constant="10" id="u7g-Bg-QgK"/>
+                    <constraint firstItem="QHC-0x-0LK" firstAttribute="leading" secondItem="dK0-j8-JCn" secondAttribute="leading" id="y7K-UD-FUe"/>
+                    <constraint firstItem="xrE-kp-OFA" firstAttribute="leading" secondItem="dK0-j8-JCn" secondAttribute="leading" id="zZ7-3g-C72"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelErrorAmount" destination="xrE-kp-OFA" id="Agw-Ty-ukN"/>
+                <outlet property="labelFixAmount" destination="zLn-Xj-t8F" id="pW1-Iu-9I7"/>
+                <outlet property="textFieldAmount" destination="MMO-jF-K9Z" id="Mbn-Ph-KQ3"/>
+                <outlet property="viewAmount" destination="dK0-j8-JCn" id="nUa-8N-sKs"/>
+            </connections>
+            <point key="canvasLocation" x="194.20289855072465" y="169.75446428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="MMO-jF-K9Z">
+            <size key="intrinsicContentSize" width="105" height="26.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="onz" width="158" height="91"/>
+        <namedColor name="darkBlue">
+            <color red="0.090196078431372548" green="0.14509803921568629" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

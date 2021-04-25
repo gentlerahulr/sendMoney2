@@ -1,0 +1,671 @@
+
+{
+    "data":[
+        {
+            "data":
+            {
+                "id": "id",
+                "title": "Playlist title goes here max 50 characters",
+                "subtitle": "Playlist subtitle maximum 45 characters",
+                "likeCount": 1,
+                "placeCount": 4,
+                "description": "",
+                "isLiked": true,
+                "updated": "2020-10-01",
+                "creator": {
+                    "id": "id",
+                    "username": "me",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 4,
+                    "updated": "2020-10-01",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                            
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue without caption",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                            
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue with small caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 3,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                            
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue with small caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio.",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 2,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "id",
+                "title": "Playlist A",
+                "subtitle": "Playlist subtitle maximum 45 characters",
+                "likeCount": 1,
+                "placeCount": 2,
+                "description": "Playlist description max 200 characters.  Ipsum dolor sit amet, consectetur adipiscing elit. In vulputate porttitor lacus, at tempor maximus rutrum. Vestibulum ante ipsum primis in faucibus orci luct.",
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                           "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue without caption",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 3,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist B",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "hello",
+                            "name": "Venue without caption",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 3,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist c",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue without caption",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 3,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist D",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                           "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "id",
+                "title": "Playlist E",
+                "subtitle": "Playlist subtitle maximum 45 characters",
+                "likeCount": 1,
+                "placeCount": 2,
+                "description": "Playlist description max 200 characters.  Ipsum dolor sit amet, consectetur adipiscing elit. In vulputate porttitor lacus, at tempor maximus rutrum. Vestibulum ante ipsum primis in faucibus orci luct.",
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist Ef",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist f",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                           "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist g",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id1",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id2",
+                            "name": "Venue without caption",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 3,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "id",
+                "title": "Playlist h",
+                "subtitle": "Playlist subtitle maximum 45 characters",
+                "likeCount": 1,
+                "placeCount": 2,
+                "description": "Playlist description max 200 characters.  Ipsum dolor sit amet, consectetur adipiscing elit. In vulputate porttitor lacus, at tempor maximus rutrum. Vestibulum ante ipsum primis in faucibus orci luct.",
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist i",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist J",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue without caption",
+                            "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                            "priceBracket": 3,
+                            "category": "Food",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": true,
+                            "isLiked": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "data":
+            {
+                "id": "idNoDesc",
+                "title": "Playlist K",
+                "subtitle": "Playlist isn't mine and has no description",
+                "likeCount": 1,
+                "placeCount": 2,
+                "isLiked": false,
+                "updated": "2020-10-02",
+                "creator": {
+                    "id": "id",
+                    "username": "someone else",
+                    "profilePictureUrl": ""
+                },
+                "venues": {
+                    "nextPageToken": "",
+                    "limit": 10,
+                    "count": 2,
+                    "updated": "2020-10-02",
+                    "items": [
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 1,
+                            "hasDeal": false,
+                            "isLiked": false
+                        },
+                        {
+                            "id": "id",
+                            "name": "Venue with caption",
+                            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                            "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                            "priceBracket": 1,
+                            "category": "Drinks",
+                            "area": "Area Name",
+                            "likeCount": 10,
+                            "hasDeal": false,
+                            "isLiked": false
+                        }
+                    ]
+                }
+            }
+        }
+        
+    ],
+    "nextPageToken": "",
+    "limit": 13,
+    "count": 13
+}

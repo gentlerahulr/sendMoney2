@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1067" id="KGk-i7-Jjw" customClass="SkeletonViewAllPlaces" customModule="ONZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="1067"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="509" height="1067"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-Ag-AzT" userLabel="backgroundView">
+                        <rect key="frame" x="20" y="50" width="469" height="1017"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Mf-Dz-ldC" customClass="UILabel">
+                                <rect key="frame" x="157" y="0.0" width="155" height="16"/>
+                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Oih-KA-uvO"/>
+                                    <constraint firstAttribute="width" constant="155" id="y3K-YV-syC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4e-S6-GEG" customClass="UILabel">
+                                <rect key="frame" x="396" y="50" width="65" height="16"/>
+                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="qmt-vD-xWO"/>
+                                    <constraint firstAttribute="height" constant="16" id="yJa-Rz-NUB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGX-p0-SdQ" customClass="UILabel">
+                                <rect key="frame" x="315" y="50" width="65" height="16"/>
+                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="bce-50-Ci5"/>
+                                    <constraint firstAttribute="height" constant="16" id="qiF-09-u1g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="laR-5l-fYI">
+                                <rect key="frame" x="0.0" y="116" width="469" height="840"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ER8-QD-JR0" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="0.0" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdc-0Z-hb7" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="ARC-DU-51X"/>
+                                                    <constraint firstAttribute="width" constant="36" id="Oo4-Bj-2sw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnQ-oM-g9F" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="NrJ-r5-3qP"/>
+                                                    <constraint firstAttribute="width" constant="152" id="dp0-1Z-IJe"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJa-ge-EYt" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="dQr-MQ-PKh"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jJa-ge-EYt" firstAttribute="bottom" secondItem="rdc-0Z-hb7" secondAttribute="bottom" id="4gV-lO-6VL"/>
+                                            <constraint firstItem="jJa-ge-EYt" firstAttribute="leading" secondItem="rdc-0Z-hb7" secondAttribute="trailing" constant="32" id="6RO-5V-hw0"/>
+                                            <constraint firstItem="rdc-0Z-hb7" firstAttribute="centerY" secondItem="ER8-QD-JR0" secondAttribute="centerY" id="Pyv-4w-0sp"/>
+                                            <constraint firstAttribute="height" constant="70" id="Wa9-K8-aM3"/>
+                                            <constraint firstItem="MnQ-oM-g9F" firstAttribute="leading" secondItem="rdc-0Z-hb7" secondAttribute="trailing" constant="32" id="ZxE-ZU-AbW"/>
+                                            <constraint firstItem="MnQ-oM-g9F" firstAttribute="top" secondItem="rdc-0Z-hb7" secondAttribute="top" id="ex0-7w-wxb"/>
+                                            <constraint firstItem="rdc-0Z-hb7" firstAttribute="leading" secondItem="ER8-QD-JR0" secondAttribute="leading" constant="8" id="grL-2h-4of"/>
+                                            <constraint firstAttribute="trailing" secondItem="jJa-ge-EYt" secondAttribute="trailing" constant="12" id="rcI-OC-HrF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiJ-LH-DNe" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="70" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hur-Gu-3o2" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="OFW-HF-Xbk"/>
+                                                    <constraint firstAttribute="height" constant="36" id="cRA-f5-50U"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3f-dd-qW2" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="M65-VL-ZnW"/>
+                                                    <constraint firstAttribute="width" constant="152" id="lDN-6k-6hm"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUc-Bh-yl5" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="6Ds-cQ-9T8"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="o3f-dd-qW2" firstAttribute="leading" secondItem="hur-Gu-3o2" secondAttribute="trailing" constant="32" id="20u-E6-K3O"/>
+                                            <constraint firstAttribute="trailing" secondItem="QUc-Bh-yl5" secondAttribute="trailing" constant="12" id="3SI-Xl-ay7"/>
+                                            <constraint firstItem="hur-Gu-3o2" firstAttribute="leading" secondItem="eiJ-LH-DNe" secondAttribute="leading" constant="8" id="B4c-GF-HEL"/>
+                                            <constraint firstItem="o3f-dd-qW2" firstAttribute="top" secondItem="hur-Gu-3o2" secondAttribute="top" id="Cgm-e8-d3x"/>
+                                            <constraint firstItem="QUc-Bh-yl5" firstAttribute="leading" secondItem="hur-Gu-3o2" secondAttribute="trailing" constant="32" id="Lai-Oc-m7o"/>
+                                            <constraint firstAttribute="height" constant="70" id="WvE-aw-Nvx"/>
+                                            <constraint firstItem="QUc-Bh-yl5" firstAttribute="bottom" secondItem="hur-Gu-3o2" secondAttribute="bottom" id="evt-Ol-yeI"/>
+                                            <constraint firstItem="hur-Gu-3o2" firstAttribute="centerY" secondItem="eiJ-LH-DNe" secondAttribute="centerY" id="rRy-ep-yqo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFk-kJ-bFz" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="140" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhM-8z-SZ1" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="sdX-Ey-njQ"/>
+                                                    <constraint firstAttribute="width" constant="36" id="yPH-Ap-7TA"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feu-m5-l1D" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="152" id="ABP-NI-YoZ"/>
+                                                    <constraint firstAttribute="height" constant="14" id="Lmq-i5-45a"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-c4-HzC" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="ptw-AA-gva"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Q7p-c4-HzC" firstAttribute="leading" secondItem="VhM-8z-SZ1" secondAttribute="trailing" constant="32" id="1y7-MR-ama"/>
+                                            <constraint firstItem="VhM-8z-SZ1" firstAttribute="leading" secondItem="LFk-kJ-bFz" secondAttribute="leading" constant="8" id="3J7-O6-qcC"/>
+                                            <constraint firstAttribute="height" constant="70" id="FZK-lI-e1T"/>
+                                            <constraint firstItem="feu-m5-l1D" firstAttribute="leading" secondItem="VhM-8z-SZ1" secondAttribute="trailing" constant="32" id="SGT-Di-5tK"/>
+                                            <constraint firstItem="Q7p-c4-HzC" firstAttribute="bottom" secondItem="VhM-8z-SZ1" secondAttribute="bottom" id="eLF-fU-rDn"/>
+                                            <constraint firstItem="VhM-8z-SZ1" firstAttribute="centerY" secondItem="LFk-kJ-bFz" secondAttribute="centerY" id="jSJ-6f-ySE"/>
+                                            <constraint firstItem="feu-m5-l1D" firstAttribute="top" secondItem="VhM-8z-SZ1" secondAttribute="top" id="oG1-Ls-YWv"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q7p-c4-HzC" secondAttribute="trailing" constant="12" id="qGK-jn-B9o"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzH-qW-nod" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="210" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBo-Ts-kd0" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="ERi-P0-76Q"/>
+                                                    <constraint firstAttribute="height" constant="36" id="MOM-8t-7h1"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGi-hO-ipc" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="qLY-0z-fKu"/>
+                                                    <constraint firstAttribute="width" constant="152" id="tv1-VE-6Ws"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW8-XR-AxK" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="1Wh-PB-GVN"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sW8-XR-AxK" firstAttribute="leading" secondItem="kBo-Ts-kd0" secondAttribute="trailing" constant="32" id="499-wS-ZvP"/>
+                                            <constraint firstItem="sW8-XR-AxK" firstAttribute="bottom" secondItem="kBo-Ts-kd0" secondAttribute="bottom" id="4Ll-GP-a6g"/>
+                                            <constraint firstItem="uGi-hO-ipc" firstAttribute="leading" secondItem="kBo-Ts-kd0" secondAttribute="trailing" constant="32" id="FQF-lZ-cJa"/>
+                                            <constraint firstAttribute="height" constant="70" id="IVj-wx-Wov"/>
+                                            <constraint firstItem="uGi-hO-ipc" firstAttribute="top" secondItem="kBo-Ts-kd0" secondAttribute="top" id="VQP-U2-45q"/>
+                                            <constraint firstItem="kBo-Ts-kd0" firstAttribute="leading" secondItem="gzH-qW-nod" secondAttribute="leading" constant="8" id="gB3-NO-FCK"/>
+                                            <constraint firstItem="kBo-Ts-kd0" firstAttribute="centerY" secondItem="gzH-qW-nod" secondAttribute="centerY" id="j3q-sw-9Ug"/>
+                                            <constraint firstAttribute="trailing" secondItem="sW8-XR-AxK" secondAttribute="trailing" constant="12" id="kUe-L4-ejk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajd-MT-dKs" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="280" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao9-cn-tug" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="A6c-RY-jEL"/>
+                                                    <constraint firstAttribute="height" constant="36" id="luP-Ya-EDv"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBx-rM-jzf" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="bjY-8N-5TV"/>
+                                                    <constraint firstAttribute="width" constant="152" id="zlh-b4-cEb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkj-mw-MD2" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="wx2-HS-LRz"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Bkj-mw-MD2" secondAttribute="trailing" constant="12" id="1b3-pf-81V"/>
+                                            <constraint firstItem="NBx-rM-jzf" firstAttribute="leading" secondItem="Ao9-cn-tug" secondAttribute="trailing" constant="32" id="Gz4-W6-gUl"/>
+                                            <constraint firstItem="Bkj-mw-MD2" firstAttribute="bottom" secondItem="Ao9-cn-tug" secondAttribute="bottom" id="OgU-uQ-2ee"/>
+                                            <constraint firstItem="NBx-rM-jzf" firstAttribute="top" secondItem="Ao9-cn-tug" secondAttribute="top" id="Rcq-0I-AGG"/>
+                                            <constraint firstItem="Ao9-cn-tug" firstAttribute="centerY" secondItem="ajd-MT-dKs" secondAttribute="centerY" id="aVj-mI-iWm"/>
+                                            <constraint firstItem="Bkj-mw-MD2" firstAttribute="leading" secondItem="Ao9-cn-tug" secondAttribute="trailing" constant="32" id="lQ5-JT-Fh9"/>
+                                            <constraint firstItem="Ao9-cn-tug" firstAttribute="leading" secondItem="ajd-MT-dKs" secondAttribute="leading" constant="8" id="wJU-b8-jxS"/>
+                                            <constraint firstAttribute="height" constant="70" id="wyu-a9-iEM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inn-et-thY" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="350" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5j-Cc-tTS" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="PEO-8T-1Yt"/>
+                                                    <constraint firstAttribute="height" constant="36" id="bOR-47-JsI"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5X-0s-ay6" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="GEa-Fs-CJJ"/>
+                                                    <constraint firstAttribute="width" constant="152" id="hNi-7x-elK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dED-YD-pOi" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="Azl-01-cm2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dED-YD-pOi" firstAttribute="leading" secondItem="s5j-Cc-tTS" secondAttribute="trailing" constant="32" id="OZF-08-HBX"/>
+                                            <constraint firstItem="dED-YD-pOi" firstAttribute="bottom" secondItem="s5j-Cc-tTS" secondAttribute="bottom" id="VSa-KL-oxh"/>
+                                            <constraint firstItem="s5j-Cc-tTS" firstAttribute="leading" secondItem="inn-et-thY" secondAttribute="leading" constant="8" id="eLe-eR-uZg"/>
+                                            <constraint firstItem="s5j-Cc-tTS" firstAttribute="centerY" secondItem="inn-et-thY" secondAttribute="centerY" id="fYV-nL-gpI"/>
+                                            <constraint firstItem="D5X-0s-ay6" firstAttribute="top" secondItem="s5j-Cc-tTS" secondAttribute="top" id="ijL-zM-r6e"/>
+                                            <constraint firstItem="D5X-0s-ay6" firstAttribute="leading" secondItem="s5j-Cc-tTS" secondAttribute="trailing" constant="32" id="oXg-Hp-aQG"/>
+                                            <constraint firstAttribute="trailing" secondItem="dED-YD-pOi" secondAttribute="trailing" constant="12" id="wrO-sz-owF"/>
+                                            <constraint firstAttribute="height" constant="70" id="y0G-66-ECJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzP-zF-ZiI" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="420" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbb-s3-63O" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="Div-kE-rje"/>
+                                                    <constraint firstAttribute="width" constant="36" id="HKk-Xi-5sl"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-vj-hJB" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="aKZ-UQ-HDA"/>
+                                                    <constraint firstAttribute="width" constant="152" id="z2y-gi-v6S"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0f9-uP-MFH" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="PGL-zo-yen"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vnc-vj-hJB" firstAttribute="leading" secondItem="mbb-s3-63O" secondAttribute="trailing" constant="32" id="3w0-VC-D52"/>
+                                            <constraint firstItem="mbb-s3-63O" firstAttribute="leading" secondItem="vzP-zF-ZiI" secondAttribute="leading" constant="8" id="GOa-BJ-FMJ"/>
+                                            <constraint firstAttribute="height" constant="70" id="Pej-wQ-6QD"/>
+                                            <constraint firstItem="vnc-vj-hJB" firstAttribute="top" secondItem="mbb-s3-63O" secondAttribute="top" id="Pgg-Kb-79s"/>
+                                            <constraint firstAttribute="trailing" secondItem="0f9-uP-MFH" secondAttribute="trailing" constant="12" id="bDN-bK-KLX"/>
+                                            <constraint firstItem="0f9-uP-MFH" firstAttribute="bottom" secondItem="mbb-s3-63O" secondAttribute="bottom" id="cm6-z4-TAT"/>
+                                            <constraint firstItem="mbb-s3-63O" firstAttribute="centerY" secondItem="vzP-zF-ZiI" secondAttribute="centerY" id="urG-VU-VjP"/>
+                                            <constraint firstItem="0f9-uP-MFH" firstAttribute="leading" secondItem="mbb-s3-63O" secondAttribute="trailing" constant="32" id="wGM-Dr-6Xl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-sX-HH8" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="490" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXL-tD-El3" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="G4y-81-IYk"/>
+                                                    <constraint firstAttribute="height" constant="36" id="sGL-Q3-Jm9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oII-9F-ikj" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="152" id="CWM-ex-ehF"/>
+                                                    <constraint firstAttribute="height" constant="14" id="clh-yW-vh1"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pz-q5-pDD" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="1ce-j6-Dfn"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wXL-tD-El3" firstAttribute="leading" secondItem="q0m-sX-HH8" secondAttribute="leading" constant="8" id="GIJ-TK-QxG"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Pz-q5-pDD" secondAttribute="trailing" constant="12" id="IDV-LT-TtM"/>
+                                            <constraint firstItem="4Pz-q5-pDD" firstAttribute="bottom" secondItem="wXL-tD-El3" secondAttribute="bottom" id="OSX-DY-N0E"/>
+                                            <constraint firstAttribute="height" constant="70" id="XB0-eU-K0b"/>
+                                            <constraint firstItem="oII-9F-ikj" firstAttribute="leading" secondItem="wXL-tD-El3" secondAttribute="trailing" constant="32" id="Z11-a7-5PF"/>
+                                            <constraint firstItem="oII-9F-ikj" firstAttribute="top" secondItem="wXL-tD-El3" secondAttribute="top" id="fbg-4g-QKr"/>
+                                            <constraint firstItem="4Pz-q5-pDD" firstAttribute="leading" secondItem="wXL-tD-El3" secondAttribute="trailing" constant="32" id="niA-L1-d72"/>
+                                            <constraint firstItem="wXL-tD-El3" firstAttribute="centerY" secondItem="q0m-sX-HH8" secondAttribute="centerY" id="tnx-Ym-OIf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44B-9q-P3b" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="560" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldj-PP-aYd" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="QsN-6F-EVs"/>
+                                                    <constraint firstAttribute="width" constant="36" id="jiA-VB-9dK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXW-l7-3jT" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="3tu-Eu-6y2"/>
+                                                    <constraint firstAttribute="width" constant="152" id="Kqu-Gl-viM"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wty-Gf-i65" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="psU-OF-y5p"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ldj-PP-aYd" firstAttribute="leading" secondItem="44B-9q-P3b" secondAttribute="leading" constant="8" id="5Pr-i1-2S4"/>
+                                            <constraint firstItem="Wty-Gf-i65" firstAttribute="leading" secondItem="ldj-PP-aYd" secondAttribute="trailing" constant="32" id="E0d-D7-eyo"/>
+                                            <constraint firstAttribute="height" constant="70" id="Txf-fX-pWZ"/>
+                                            <constraint firstItem="HXW-l7-3jT" firstAttribute="leading" secondItem="ldj-PP-aYd" secondAttribute="trailing" constant="32" id="WSU-7n-sjl"/>
+                                            <constraint firstItem="HXW-l7-3jT" firstAttribute="top" secondItem="ldj-PP-aYd" secondAttribute="top" id="dW6-NL-MX0"/>
+                                            <constraint firstItem="ldj-PP-aYd" firstAttribute="centerY" secondItem="44B-9q-P3b" secondAttribute="centerY" id="q0Y-3x-wof"/>
+                                            <constraint firstItem="Wty-Gf-i65" firstAttribute="bottom" secondItem="ldj-PP-aYd" secondAttribute="bottom" id="x8n-Gn-MgI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wty-Gf-i65" secondAttribute="trailing" constant="12" id="z3d-kU-z2q"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfI-NE-yki" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="630" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKF-Xa-kTf" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="aFU-T5-6G1"/>
+                                                    <constraint firstAttribute="width" constant="36" id="kfc-PG-Eae"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="669-Zu-7fZ" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="152" id="HcS-9e-ZVw"/>
+                                                    <constraint firstAttribute="height" constant="14" id="mxK-gC-mlz"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-wO-B6j" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="0lD-nf-v1L"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gKF-Xa-kTf" firstAttribute="leading" secondItem="NfI-NE-yki" secondAttribute="leading" constant="8" id="4jS-Im-7eV"/>
+                                            <constraint firstItem="gKF-Xa-kTf" firstAttribute="centerY" secondItem="NfI-NE-yki" secondAttribute="centerY" id="6Ur-la-kc4"/>
+                                            <constraint firstItem="kUU-wO-B6j" firstAttribute="leading" secondItem="gKF-Xa-kTf" secondAttribute="trailing" constant="32" id="KHC-Ej-qdk"/>
+                                            <constraint firstAttribute="height" constant="70" id="Z1y-KA-1Ac"/>
+                                            <constraint firstItem="kUU-wO-B6j" firstAttribute="bottom" secondItem="gKF-Xa-kTf" secondAttribute="bottom" id="ZtA-MD-nTs"/>
+                                            <constraint firstItem="669-Zu-7fZ" firstAttribute="leading" secondItem="gKF-Xa-kTf" secondAttribute="trailing" constant="32" id="jka-hd-F7z"/>
+                                            <constraint firstItem="669-Zu-7fZ" firstAttribute="top" secondItem="gKF-Xa-kTf" secondAttribute="top" id="kjS-7J-q7V"/>
+                                            <constraint firstAttribute="trailing" secondItem="kUU-wO-B6j" secondAttribute="trailing" constant="12" id="wbW-C6-CG7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQt-zs-EKo" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="700" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJP-qL-fal" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="1bh-Kq-ZnE"/>
+                                                    <constraint firstAttribute="width" constant="36" id="P1e-Pb-8EM"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXG-xi-9Yv" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="152" id="KId-nr-pGz"/>
+                                                    <constraint firstAttribute="height" constant="14" id="oyp-ys-3bA"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtR-Av-nlG" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="JiE-cU-71x"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="0am-s4-Ht1"/>
+                                            <constraint firstItem="YXG-xi-9Yv" firstAttribute="top" secondItem="nJP-qL-fal" secondAttribute="top" id="870-Hb-zHT"/>
+                                            <constraint firstItem="nJP-qL-fal" firstAttribute="leading" secondItem="dQt-zs-EKo" secondAttribute="leading" constant="8" id="Ojo-20-gOE"/>
+                                            <constraint firstAttribute="trailing" secondItem="FtR-Av-nlG" secondAttribute="trailing" constant="12" id="csV-2R-NMk"/>
+                                            <constraint firstItem="FtR-Av-nlG" firstAttribute="bottom" secondItem="nJP-qL-fal" secondAttribute="bottom" id="eNN-Yd-lMo"/>
+                                            <constraint firstItem="FtR-Av-nlG" firstAttribute="leading" secondItem="nJP-qL-fal" secondAttribute="trailing" constant="32" id="gsm-dc-kAW"/>
+                                            <constraint firstItem="YXG-xi-9Yv" firstAttribute="leading" secondItem="nJP-qL-fal" secondAttribute="trailing" constant="32" id="kCN-jw-R1z"/>
+                                            <constraint firstItem="nJP-qL-fal" firstAttribute="centerY" secondItem="dQt-zs-EKo" secondAttribute="centerY" id="s6b-s0-PDm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9Y-8A-ohY" userLabel="Cell">
+                                        <rect key="frame" x="0.0" y="770" width="469" height="70"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9J-vN-bpD" userLabel="Image" customClass="UIImageView">
+                                                <rect key="frame" x="8" y="17" width="36" height="36"/>
+                                                <color key="backgroundColor" name="darkBlueTint2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="ZXu-ex-3QC"/>
+                                                    <constraint firstAttribute="width" constant="36" id="rnS-4l-ZJo"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UC-3c-Zdn" userLabel="Title" customClass="UILabel">
+                                                <rect key="frame" x="76" y="17" width="152" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="C5h-UK-9ub"/>
+                                                    <constraint firstAttribute="width" constant="152" id="wye-Qz-woy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-6P-3b3" userLabel="Info" customClass="UILabel">
+                                                <rect key="frame" x="76" y="39" width="381" height="14"/>
+                                                <color key="backgroundColor" name="darkBlueTint3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="WjV-aR-d8c"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0UC-3c-Zdn" firstAttribute="top" secondItem="M9J-vN-bpD" secondAttribute="top" id="6vI-jY-uWO"/>
+                                            <constraint firstItem="M9J-vN-bpD" firstAttribute="centerY" secondItem="h9Y-8A-ohY" secondAttribute="centerY" id="Gda-L2-Z3f"/>
+                                            <constraint firstItem="0UC-3c-Zdn" firstAttribute="leading" secondItem="M9J-vN-bpD" secondAttribute="trailing" constant="32" id="IKb-1M-Nkb"/>
+                                            <constraint firstItem="lbC-6P-3b3" firstAttribute="leading" secondItem="M9J-vN-bpD" secondAttribute="trailing" constant="32" id="QW5-jT-LLu"/>
+                                            <constraint firstItem="M9J-vN-bpD" firstAttribute="leading" secondItem="h9Y-8A-ohY" secondAttribute="leading" constant="8" id="XJ3-7j-JSL"/>
+                                            <constraint firstItem="lbC-6P-3b3" firstAttribute="bottom" secondItem="M9J-vN-bpD" secondAttribute="bottom" id="a8Q-5K-2uI"/>
+                                            <constraint firstAttribute="height" constant="70" id="kwF-7w-lnm"/>
+                                            <constraint firstAttribute="trailing" secondItem="lbC-6P-3b3" secondAttribute="trailing" constant="12" id="pDE-Y4-K9n"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eiJ-LH-DNe" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="0oR-k9-ezu"/>
+                                    <constraint firstAttribute="trailing" secondItem="44B-9q-P3b" secondAttribute="trailing" id="2yw-5k-BqB"/>
+                                    <constraint firstItem="ER8-QD-JR0" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="Az4-as-zr4"/>
+                                    <constraint firstItem="44B-9q-P3b" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="BDA-CQ-OSW"/>
+                                    <constraint firstItem="LFk-kJ-bFz" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="D2O-BY-fga"/>
+                                    <constraint firstItem="ajd-MT-dKs" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="DYS-3I-c3a"/>
+                                    <constraint firstItem="dQt-zs-EKo" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="F1F-Ay-hCq"/>
+                                    <constraint firstAttribute="trailing" secondItem="ER8-QD-JR0" secondAttribute="trailing" id="Iaq-aM-Ihd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ajd-MT-dKs" secondAttribute="trailing" id="QYG-50-eDI"/>
+                                    <constraint firstItem="NfI-NE-yki" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="VkZ-6n-CQR"/>
+                                    <constraint firstAttribute="trailing" secondItem="LFk-kJ-bFz" secondAttribute="trailing" id="VlC-ly-Bfd"/>
+                                    <constraint firstItem="gzH-qW-nod" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="X79-mL-LgK"/>
+                                    <constraint firstItem="vzP-zF-ZiI" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="ZJJ-WH-EUT"/>
+                                    <constraint firstAttribute="trailing" secondItem="NfI-NE-yki" secondAttribute="trailing" id="ZW4-ew-pdj"/>
+                                    <constraint firstAttribute="trailing" secondItem="dQt-zs-EKo" secondAttribute="trailing" id="a8C-m6-N9u"/>
+                                    <constraint firstItem="inn-et-thY" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="kVB-TB-NvX"/>
+                                    <constraint firstAttribute="trailing" secondItem="q0m-sX-HH8" secondAttribute="trailing" id="krI-bW-RBD"/>
+                                    <constraint firstItem="q0m-sX-HH8" firstAttribute="leading" secondItem="laR-5l-fYI" secondAttribute="leading" id="kxN-bQ-P9I"/>
+                                    <constraint firstAttribute="trailing" secondItem="inn-et-thY" secondAttribute="trailing" id="n5r-yT-joa"/>
+                                    <constraint firstAttribute="trailing" secondItem="eiJ-LH-DNe" secondAttribute="trailing" id="pIG-ME-i57"/>
+                                    <constraint firstAttribute="trailing" secondItem="vzP-zF-ZiI" secondAttribute="trailing" id="uY0-Va-Ecb"/>
+                                    <constraint firstAttribute="trailing" secondItem="gzH-qW-nod" secondAttribute="trailing" id="yL0-GW-nxe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="T4e-S6-GEG" firstAttribute="top" secondItem="2bE-Ag-AzT" secondAttribute="top" constant="50" id="5iC-BI-pcx"/>
+                            <constraint firstAttribute="trailing" secondItem="T4e-S6-GEG" secondAttribute="trailing" constant="8" id="D1o-Mo-3My"/>
+                            <constraint firstItem="laR-5l-fYI" firstAttribute="top" secondItem="8Mf-Dz-ldC" secondAttribute="bottom" constant="100" id="SkM-F0-iNa"/>
+                            <constraint firstItem="8Mf-Dz-ldC" firstAttribute="top" secondItem="2bE-Ag-AzT" secondAttribute="top" id="TiJ-qa-0h7"/>
+                            <constraint firstItem="T4e-S6-GEG" firstAttribute="leading" secondItem="uGX-p0-SdQ" secondAttribute="trailing" constant="16" id="Vtz-2i-dXS"/>
+                            <constraint firstItem="8Mf-Dz-ldC" firstAttribute="centerX" secondItem="2bE-Ag-AzT" secondAttribute="centerX" id="hlS-MK-y5g"/>
+                            <constraint firstItem="uGX-p0-SdQ" firstAttribute="centerY" secondItem="T4e-S6-GEG" secondAttribute="centerY" id="oV4-Ii-yVi"/>
+                            <constraint firstItem="laR-5l-fYI" firstAttribute="leading" secondItem="2bE-Ag-AzT" secondAttribute="leading" id="udw-na-Zd3"/>
+                            <constraint firstAttribute="trailing" secondItem="laR-5l-fYI" secondAttribute="trailing" id="vap-TX-5Jc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="2bE-Ag-AzT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="FNW-zm-vRK"/>
+                    <constraint firstAttribute="trailing" secondItem="2bE-Ag-AzT" secondAttribute="trailing" constant="20" symbolic="YES" id="dv5-ML-dpl"/>
+                    <constraint firstAttribute="bottom" secondItem="2bE-Ag-AzT" secondAttribute="bottom" id="lle-bs-QJJ"/>
+                    <constraint firstItem="2bE-Ag-AzT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="saq-Es-lBC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="176.08695652173915" y="380.02232142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkBlueTint2">
+            <color red="0.77254901960784317" green="0.78431372549019607" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlueTint3">
+            <color red="0.94117647058823528" green="0.94509803921568625" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

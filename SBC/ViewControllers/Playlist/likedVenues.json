@@ -1,0 +1,56 @@
+
+{
+    "nextPageToken": "",
+    "limit": 10,
+    "count": 4,
+    "updated": "2020-10-03",
+    "items": [
+        {
+            "id": "id",
+            "name": "Venue with caption",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+            "imageUrl": "venue1",
+            "priceBracket": 1,
+            "category": "Drinks",
+            "area": "Area Name",
+            "likeCount": 8,
+            "hasDeal": false,
+            "isLiked": true
+        },
+        {
+            "id": "id",
+            "name": "Venue without caption",
+            "imageUrl": "venue2",
+            "priceBracket": 1,
+            "category": "Food",
+            "area": "Area Name",
+            "likeCount": 3,
+            "hasDeal": true,
+            "isLiked": true
+        },
+        {
+            "id": "id",
+            "name": "Venue with small caption",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae",
+            "imageUrl": "venue2",
+            "priceBracket": 2,
+            "category": "Food",
+            "area": "Area Name",
+            "likeCount": 4,
+            "hasDeal": true,
+            "isLiked": true
+        },
+        {
+            "id": "id",
+            "name": "Venue with small caption",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio.",
+            "imageUrl": "venue2",
+            "priceBracket": 3,
+            "category": "Food",
+            "area": "Area Name",
+            "likeCount": 1,
+            "hasDeal": true,
+            "isLiked": true
+        }
+    ]
+}

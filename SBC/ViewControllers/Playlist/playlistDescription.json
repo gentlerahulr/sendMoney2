@@ -1,0 +1,50 @@
+
+{
+    "data": {
+        "id": "id",
+        "title": "My playlist title here",
+        "subtitle": "Playlist subtitle maximum 45 characters",
+        "likeCount": 1,
+        "placeCount": 2,
+        "description": "Playlist description max 200 characters.  Ipsum dolor sit amet, consectetur adipiscing elit. In vulputate porttitor lacus, at tempor maximus rutrum. Vestibulum ante ipsum primis in faucibus orci luct.",
+        "isLiked": false,
+        "updated": "2020-10-02",
+        "creator": {
+            "id": "id",
+            "username": "someone else",
+            "profilePictureUrl": ""
+        },
+        "venues": {
+            "nextPageToken": "",
+            "limit": 10,
+            "count": 2,
+            "updated": "2020-10-02",
+            "items": [
+                {
+                    "id": "id",
+                    "name": "Venue with caption",
+                    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                    "imageUrl": "venue1",
+                    "priceBracket": 1,
+                    "category": "Drinks",
+                    "area": "Area Name",
+                    "likeCount": 11,
+                    "hasDeal": false,
+                    "isLiked": false
+                },
+                {
+                    "id": "id",
+                    "name": "Venue without caption",
+                    "imageUrl": "venue2",
+                    "priceBracket": 3,
+                    "category": "Food",
+                    "area": "Area Name",
+                    "likeCount": 5,
+                    "hasDeal": true,
+                    "isLiked": true
+                }
+            ]
+        }
+    }
+}
+

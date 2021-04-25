@@ -1,0 +1,838 @@
+
+{
+    "header": {
+        "success": true,
+        "authenticated": true
+    },
+    "payload": [
+        {
+            "key": "hp4F3LQT4MRgHz3GlTw=",
+            "currency": "SGD",
+            "amount": 2358,
+            "description": "EZPY SCEASYBILLEDUCA00033",
+            "date": "2020-08-05",
+            "balance": -35960.81,
+            "movement": "debit",
+            "original_category": "BillsUtilities",
+            "extraction": "2020-08-05T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Knjk=",
+            "account_name": "Phoenix Card 1003",
+            "custom_fields": [
+                {
+                    "name": "transaction_id",
+                    "value": "T000011"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-08-05"
+                },
+                {
+                    "name": "city",
+                    "value": "#05/06~~"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5999"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#BillsUtilities"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3Gmjw=",
+            "currency": "SGD",
+            "amount": 29.27,
+            "description": "APPLE.COM/BILL",
+            "date": "2020-08-03",
+            "balance": 1622.75,
+            "movement": "debit",
+            "original_category": "Hobbies",
+            "extraction": "2020-08-03T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "transaction_id",
+                    "value": "T000057"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-08-04"
+                },
+                {
+                    "name": "city",
+                    "value": "ITUNES.COM"
+                },
+                {
+                    "name": "country_code",
+                    "value": "IE"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5735"
+                },
+                {
+                    "name": "auth_code",
+                    "value": "005703"
+                },
+                {
+                    "name": "website",
+                    "value": "https://www.apple.com/sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "fa1c00f97e6a499f8bb482f17bdacb51.png"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Apple.com"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Entertainment #kidsgaming"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3Gmzw=",
+            "currency": "SGD",
+            "amount": 15.13,
+            "description": "APPLE.COM/BILL",
+            "date": "2020-08-03",
+            "balance": 1652.02,
+            "movement": "debit",
+            "original_category": "Hobbies",
+            "extraction": "2020-08-03T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "auth_code",
+                    "value": "005706"
+                },
+                {
+                    "name": "website",
+                    "value": "https://www.apple.com/sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "fa1c00f97e6a499f8bb482f17bdacb51.png"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Apple.com"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Hobbies"
+                },
+                {
+                    "name": "transaction_id",
+                    "value": "T000056"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-08-04"
+                },
+                {
+                    "name": "city",
+                    "value": "ITUNES.COM"
+                },
+                {
+                    "name": "country_code",
+                    "value": "IE"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5735"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3GmDw=",
+            "currency": "SGD",
+            "amount": 2.79,
+            "description": "GOOGLE*GOOGLE STORAGE",
+            "date": "2020-08-02",
+            "balance": 1667.15,
+            "movement": "debit",
+            "original_category": "Internet",
+            "extraction": "2020-08-02T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "auth_code",
+                    "value": "001353"
+                },
+                {
+                    "name": "website",
+                    "value": "https://www.google.com.sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "c316e4ca42b0497b860024043c946385.png"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Google"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Internet"
+                },
+                {
+                    "name": "transaction_id",
+                    "value": "T000055"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-08-04"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5968"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3GmTw=",
+            "currency": "SGD",
+            "amount": 2.04,
+            "description": "PARKING.SG BILL_AD1E44",
+            "date": "2020-08-01",
+            "balance": 1669.94,
+            "movement": "debit",
+            "original_category": "Parking",
+            "extraction": "2020-08-01T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "auth_code",
+                    "value": "000394"
+                },
+                {
+                    "name": "website",
+                    "value": "https://www.parking.sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "1666fb482c75453f9537e3e59f1aec4e.jpeg"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Parking.sg"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Parking"
+                },
+                {
+                    "name": "transaction_id",
+                    "value": "T000054"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-08-01"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "7523"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3Gnjw=",
+            "currency": "SGD",
+            "amount": 99.88,
+            "description": "ESSO-CHEERS BY FP",
+            "date": "2020-07-31",
+            "balance": 1671.98,
+            "movement": "debit",
+            "original_category": "GasFuel",
+            "extraction": "2020-07-31T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "transaction_id",
+                    "value": "T000053"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-08-03"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5541"
+                },
+                {
+                    "name": "auth_code",
+                    "value": "008284"
+                },
+                {
+                    "name": "website",
+                    "value": "http://www.cheers.com.sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "c6e1e38737724fc68b7d325bc03299d7.jpg"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Cheers"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Television Here is trying to do hash tagging #some_tag with some text."
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3GnDw=",
+            "currency": "SGD",
+            "amount": 9250,
+            "description": "OVERSEAS FAMILY SCHOOL",
+            "date": "2020-07-29",
+            "balance": -3943.49,
+            "movement": "debit",
+            "original_category": "Education",
+            "extraction": "2020-07-29T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/KmTk=",
+            "account_name": "Phoenix Card 1001",
+            "custom_fields": [
+                {
+                    "name": "transaction_id",
+                    "value": "T00002"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-07-30"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "state",
+                    "value": "06"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "8244"
+                },
+                {
+                    "name": "auth_code",
+                    "value": "T04292"
+                },
+                {
+                    "name": "website",
+                    "value": "https://ofs.edu.sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "e66771d921704d45ab58c8d0158bca72.jpeg"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Overseas Family School"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Education"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3Gnzw=",
+            "currency": "SGD",
+            "amount": 7000,
+            "description": "OVERSEAS FAMILY SCHOOL",
+            "date": "2020-07-29",
+            "balance": -33602.81,
+            "movement": "debit",
+            "original_category": "Education",
+            "extraction": "2020-07-29T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Knjk=",
+            "account_name": "Phoenix Card 1003",
+            "custom_fields": [
+                {
+                    "name": "transaction_id",
+                    "value": "T000010"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-07-30"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "state",
+                    "value": "06"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "8244"
+                },
+                {
+                    "name": "auth_code",
+                    "value": "T04262"
+                },
+                {
+                    "name": "website",
+                    "value": "https://ofs.edu.sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "e66771d921704d45ab58c8d0158bca72.jpeg"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Overseas Family School"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Education"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3GnTw=",
+            "currency": "SGD",
+            "amount": 0.6,
+            "description": "PARKING.SG BILL_3940D8",
+            "date": "2020-07-28",
+            "balance": 1771.86,
+            "movement": "debit",
+            "original_category": "Parking",
+            "extraction": "2020-07-28T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "auth_code",
+                    "value": "009979"
+                },
+                {
+                    "name": "website",
+                    "value": "https://www.parking.sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "1666fb482c75453f9537e3e59f1aec4e.jpeg"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Parking.sg"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Parking"
+                },
+                {
+                    "name": "transaction_id",
+                    "value": "T000052"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-07-28"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "7523"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3BlDw=",
+            "currency": "SGD",
+            "amount": 27.6,
+            "description": "IKEA",
+            "date": "2020-07-26",
+            "balance": 1772.46,
+            "movement": "debit",
+            "original_category": "Shopping",
+            "extraction": "2020-07-26T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "transaction_id",
+                    "value": "T000051"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-07-27"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5712"
+                },
+                {
+                    "name": "auth_code",
+                    "value": "003874"
+                },
+                {
+                    "name": "website",
+                    "value": "https://www.ikea.com/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "34a9198292044fc1afaadd5ba5178000.png"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Ikea"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Shopping #workfromhome"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3BlTw=",
+            "currency": "SGD",
+            "amount": 4.02,
+            "description": "APPLE.COM/BILL",
+            "date": "2020-07-25",
+            "balance": 1800.06,
+            "movement": "debit",
+            "original_category": "Hobbies",
+            "extraction": "2020-07-25T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "transaction_id",
+                    "value": "T000050"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-07-27"
+                },
+                {
+                    "name": "city",
+                    "value": "8001861087"
+                },
+                {
+                    "name": "country_code",
+                    "value": "IE"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5735"
+                },
+                {
+                    "name": "auth_code",
+                    "value": "006618"
+                },
+                {
+                    "name": "website",
+                    "value": "https://www.apple.com/sg/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "fa1c00f97e6a499f8bb482f17bdacb51.png"
+                },
+                {
+                    "name": "counterparty_name",
+                    "value": "Apple.com"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Hobbies"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3Bmjw=",
+            "currency": "SGD",
+            "amount": 23.04,
+            "description": "ZOOM.US",
+            "date": "2020-07-24",
+            "balance": 1810.62,
+            "movement": "debit",
+            "original_category": "Internet",
+            "extraction": "2020-07-24T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "tips": [
+                {
+                    "tip_key": "hp4F3LQT4MRhGTbKmj8=",
+                    "creation": "2020-07-24T18:26:50.136+0800",
+                    "title": "Zoom Subscription Review",
+                    "family": "Savings Insight",
+                    "height": 794,
+                    "origin": "recommendation",
+                    "status": "live",
+                    "running_from": "2018-01-01",
+                    "running_to": "2020-12-31",
+                    "priority": 1,
+                    "latency_mode": "days",
+                    "latency_days": 180,
+                    "events": [
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:05:08.752+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:06:29.863+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:06:55.693+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:06:58.357+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:12:09.702+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:12:20.586+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:30:00.980+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T19:30:04.460+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T22:44:13.618+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-12T22:44:37.446+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-14T20:26:32.317+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-14T20:26:42.410+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-14T20:27:16.354+0800"
+                        },
+                        {
+                            "action": "impression",
+                            "timestamp": "2020-09-14T20:27:32.486+0800"
+                        }
+                    ]
+                }
+            ],
+            "custom_fields": [
+                {
+                    "name": "counterparty_name",
+                    "value": "Zoom.us"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Internet"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5968"
+                },
+                {
+                    "name": "auth_code",
+                    "value": "009724"
+                },
+                {
+                    "name": "org_amount",
+                    "value": 16.04
+                },
+                {
+                    "name": "org_ccy",
+                    "value": "USD"
+                },
+                {
+                    "name": "website",
+                    "value": "https://zoom.us/"
+                },
+                {
+                    "name": "image_file",
+                    "value": "4cab2611b75c42509e5e4b9fffbd229b.jpeg"
+                },
+                {
+                    "name": "transaction_id",
+                    "value": "T000049"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-07-25"
+                },
+                {
+                    "name": "city",
+                    "value": "8887999666"
+                },
+                {
+                    "name": "country_code",
+                    "value": "US"
+                },
+                {
+                    "name": "state",
+                    "value": "CA"
+                }
+            ]
+        },
+        {
+            "key": "hp4F3LQT4MRgHz3Bmzw=",
+            "currency": "SGD",
+            "amount": 21.2,
+            "description": "CHAATS-DINING-SWEETS",
+            "date": "2020-07-24",
+            "balance": 1833.66,
+            "movement": "debit",
+            "original_category": "Restaurants",
+            "extraction": "2020-07-24T00:00:00.000+0800",
+            "account_key": "hp4F3LQT4MRhGz/Lnjk=",
+            "account_name": "Phoenix Card 1002",
+            "custom_fields": [
+                {
+                    "name": "auth_code",
+                    "value": "004729"
+                },
+                {
+                    "name": "custom_description",
+                    "value": "#Restaurants"
+                },
+                {
+                    "name": "transaction_id",
+                    "value": "T000048"
+                },
+                {
+                    "name": "type",
+                    "value": "001"
+                },
+                {
+                    "name": "posting_date",
+                    "value": "2020-07-25"
+                },
+                {
+                    "name": "city",
+                    "value": "SINGAPORE"
+                },
+                {
+                    "name": "country_code",
+                    "value": "SG"
+                },
+                {
+                    "name": "merchant_code",
+                    "value": "5812"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="RecentSearchTableViewCell" customModule="ONZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-QG-o86">
+                        <rect key="frame" x="0.0" y="4" width="296" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diS-vm-tyd">
+                        <rect key="frame" x="296" y="4" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="AfO-wy-6ly"/>
+                            <constraint firstAttribute="width" constant="24" id="adU-1I-SGg"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                        <state key="normal" image="clearBtn"/>
+                        <connections>
+                            <action selector="removeSearch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1Cf-C2-ae2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="diS-vm-tyd" secondAttribute="bottom" constant="4" id="GXM-rQ-nFI"/>
+                    <constraint firstItem="bhT-QG-o86" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="TUP-u7-Xfk"/>
+                    <constraint firstItem="bhT-QG-o86" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UHI-tS-3mb"/>
+                    <constraint firstItem="diS-vm-tyd" firstAttribute="leading" secondItem="bhT-QG-o86" secondAttribute="trailing" id="aep-bU-mCx"/>
+                    <constraint firstItem="diS-vm-tyd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="cT7-ea-nvk"/>
+                    <constraint firstAttribute="bottom" secondItem="bhT-QG-o86" secondAttribute="bottom" constant="4" id="hSh-vH-Qgr"/>
+                    <constraint firstAttribute="trailing" secondItem="diS-vm-tyd" secondAttribute="trailing" id="kV0-9c-RPs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="searchLabel" destination="bhT-QG-o86" id="Jd3-1n-rUs"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clearBtn" width="24" height="24"/>
+    </resources>
+</document>

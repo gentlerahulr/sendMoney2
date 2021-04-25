@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TJK-Mt-LtY">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mFV-TP-Xt7">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavViewController" navigationBarHidden="YES" id="TJK-Mt-LtY" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HDI-wO-P9T">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2at-cd-0Hu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgc-gy-qpk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="79"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regtangleBG" translatesAutoresizingMaskIntoConstraints="NO" id="qM9-eW-wfu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onz" translatesAutoresizingMaskIntoConstraints="NO" id="fMi-Ex-kb6">
+                                <rect key="frame" x="128" y="217" width="158" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="qqV-Wb-r3W"/>
+                                    <constraint firstAttribute="height" constant="91" id="sPp-rG-Ch1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-TC-Bbx">
+                                <rect key="frame" x="28" y="406" width="358" height="48"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2xr-xB-jsX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="-12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Register with Facebook" image="fbLogo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerWithFBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWK-L9-293"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQP-x1-Ncf">
+                                <rect key="frame" x="28" y="534" width="358" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="uWm-W3-wBF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="-2"/>
+                                <inset key="imageEdgeInsets" minX="-12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Register with Apple" image="apple">
+                                    <color key="titleColor" red="0.10196078431372549" green="0.14509803921568626" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerWithAppleTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lez-rD-wBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-qx-w6s">
+                                <rect key="frame" x="157" y="792" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AlT-GC-S68"/>
+                                    <constraint firstAttribute="height" constant="35" id="RTF-3n-m1P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-130" maxY="0.0"/>
+                                <state key="normal" title="Log in" image="arrowNav">
+                                    <color key="titleColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67H-QU-MZk"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This user is already registered. Please login." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjV-AL-EH8">
+                                <rect key="frame" x="28" y="346" width="358" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Mfk-qG-lBp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drU-2b-r0T">
+                                <rect key="frame" x="28" y="470" width="358" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kVu-bc-U7p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="-12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Register with email" image="emailLogo">
+                                    <color key="titleColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerWithEmailTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zxj-GT-t5W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qM9-eW-wfu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0IJ-60-VK7"/>
+                            <constraint firstItem="qM9-eW-wfu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B4a-YM-RIH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="drU-2b-r0T" secondAttribute="trailing" constant="28" id="Cis-Zb-cBS"/>
+                            <constraint firstItem="tQP-x1-Ncf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="FMn-G8-RRN"/>
+                            <constraint firstItem="tQP-x1-Ncf" firstAttribute="top" secondItem="drU-2b-r0T" secondAttribute="bottom" constant="16" id="IFP-8F-3hE"/>
+                            <constraint firstItem="bnp-TC-Bbx" firstAttribute="centerY" secondItem="qM9-eW-wfu" secondAttribute="centerY" constant="-40" id="JHs-UU-RWJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tQP-x1-Ncf" secondAttribute="trailing" constant="28" id="JJy-7Z-82n"/>
+                            <constraint firstItem="bnp-TC-Bbx" firstAttribute="top" secondItem="jjV-AL-EH8" secondAttribute="bottom" constant="16" id="JWg-pE-Oy4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jjV-AL-EH8" secondAttribute="trailing" constant="28" id="Mou-as-fZv"/>
+                            <constraint firstItem="jjV-AL-EH8" firstAttribute="top" secondItem="fMi-Ex-kb6" secondAttribute="bottom" constant="38" id="PBv-LZ-YGu"/>
+                            <constraint firstItem="z5W-qx-w6s" firstAttribute="centerX" secondItem="qM9-eW-wfu" secondAttribute="centerX" id="PUH-zw-cdw"/>
+                            <constraint firstItem="fMi-Ex-kb6" firstAttribute="centerX" secondItem="bnp-TC-Bbx" secondAttribute="centerX" id="cBO-q3-e7i"/>
+                            <constraint firstItem="bnp-TC-Bbx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="fCE-54-qtV"/>
+                            <constraint firstItem="qM9-eW-wfu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="gDw-sP-zCp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z5W-qx-w6s" secondAttribute="bottom" constant="35" id="iCd-E3-Ngt"/>
+                            <constraint firstItem="drU-2b-r0T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="jpw-BU-qoV"/>
+                            <constraint firstItem="jjV-AL-EH8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="l81-jJ-Dxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bnp-TC-Bbx" secondAttribute="trailing" constant="28" id="orw-EI-zNU"/>
+                            <constraint firstAttribute="bottom" secondItem="qM9-eW-wfu" secondAttribute="bottom" id="xIM-xg-Lmt"/>
+                            <constraint firstItem="drU-2b-r0T" firstAttribute="top" secondItem="bnp-TC-Bbx" secondAttribute="bottom" constant="16" id="xd3-lP-WEE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ljA-kh-9cG"/>
+                    <connections>
+                        <outlet property="buttonRegisterWithApple" destination="tQP-x1-Ncf" id="GGD-KN-b8j"/>
+                        <outlet property="buttonRegisterWithEmail" destination="drU-2b-r0T" id="mRW-Ba-GFJ"/>
+                        <outlet property="buttonRegisterWithFB" destination="bnp-TC-Bbx" id="Axq-R8-EuZ"/>
+                        <outlet property="lableErrorAlreadyRegistered" destination="jjV-AL-EH8" id="jgy-fn-ebT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="79.064039408867004"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="15.333333015441895" height="18.333333969116211"/>
+        <image name="arrowNav" width="7" height="12"/>
+        <image name="emailLogo" width="24.333333969116211" height="24.333333969116211"/>
+        <image name="fbLogo" width="18" height="18.333333969116211"/>
+        <image name="onz" width="158" height="91"/>
+        <image name="regtangleBG" width="375" height="747"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

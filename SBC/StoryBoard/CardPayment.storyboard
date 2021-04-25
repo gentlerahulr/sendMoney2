@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Card Payment View Controller-->
+        <scene sceneID="t5l-Yl-Nh7">
+            <objects>
+                <viewController storyboardIdentifier="CardPaymentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eag-ae-omn" customClass="CardPaymentViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="noW-nG-S17">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-1E-1Gf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="712.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-Iv-aNP">
+                                        <rect key="frame" x="28" y="80" width="358" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="0Hn-dq-SJy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" name="darkBlueTint1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S$20.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F05-Wb-B6k">
+                                        <rect key="frame" x="28" y="98" width="358" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="BSA-MK-bkJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="28"/>
+                                        <color key="textColor" name="darkBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top up method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-f2-n0Y">
+                                        <rect key="frame" x="28" y="155" width="358" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="4ce-93-x1C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" name="darkBlueTint1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWF-9Y-2uk">
+                                        <rect key="frame" x="28" y="173" width="358" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="y2J-Vo-wa2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="28"/>
+                                        <color key="textColor" name="darkBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cardholder name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KhM-Cj-Zhv" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="36" y="235" width="342" height="44"/>
+                                        <color key="tintColor" name="darkBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Q2h-wl-Wmi"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhL-Mm-zUi" userLabel="Card View">
+                                        <rect key="frame" x="28" y="276" width="358" height="1"/>
+                                        <color key="backgroundColor" red="0.4039215686" green="0.43529411759999997" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="PLf-Pf-8s2"/>
+                                        </constraints>
+                                    </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid cardholder name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaE-q6-mA4">
+                                        <rect key="frame" x="36" y="276" width="139.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="84f-Oa-WgO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3R-6w-64k" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="36" y="317" width="315" height="44"/>
+                                        <color key="tintColor" name="darkBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="NOj-jc-gZ8"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puM-u2-dlp">
+                                        <rect key="frame" x="362" y="327" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="ghF-Wm-SDq"/>
+                                            <constraint firstAttribute="width" constant="24" id="rXz-o1-Iau"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" image="icon-camera"/>
+                                        <state key="selected" image="showEye"/>
+                                        <connections>
+                                            <action selector="Camera_Tapped:" destination="eag-ae-omn" eventType="touchUpInside" id="aQy-7X-5Ha"/>
+                                        </connections>
+                                    </button>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6w-qP-7bb" userLabel="Card View">
+                                        <rect key="frame" x="28" y="358" width="358" height="1"/>
+                                        <color key="backgroundColor" red="0.4039215686" green="0.43529411759999997" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="F2w-XT-SG2"/>
+                                        </constraints>
+                                    </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid card number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4B-V2-hBq">
+                                        <rect key="frame" x="36" y="358" width="115.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="FAr-5w-EAy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiry date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4wv-lJ-xic" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="36" y="399" width="149" height="44"/>
+                                        <color key="tintColor" name="darkBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="hdH-IE-cOS"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-yN-xep" userLabel="Expiry View">
+                                        <rect key="frame" x="28" y="440" width="165" height="1"/>
+                                        <color key="backgroundColor" red="0.4039215686" green="0.43529411759999997" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="OkG-a2-Bbs"/>
+                                        </constraints>
+                                    </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid expiry date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01N-MM-jKg">
+                                        <rect key="frame" x="36" y="440" width="106" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="kby-dS-pH0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwm-pw-z0A" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="229" y="399" width="122" height="44"/>
+                                        <color key="tintColor" name="darkBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Ets-He-yHi"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                <color key="value" name="darkBlueTint1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                <real key="value" value="-7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRI-NU-fz8">
+                                        <rect key="frame" x="362" y="409" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="YjY-RX-en5"/>
+                                            <constraint firstAttribute="height" constant="24" id="c0K-5b-6Jg"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" image="InfoImage"/>
+                                        <connections>
+                                            <action selector="Info_Tapped:" destination="eag-ae-omn" eventType="touchUpInside" id="qfS-Wt-Fj8"/>
+                                        </connections>
+                                    </button>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npo-ws-6az" userLabel="CVV View">
+                                        <rect key="frame" x="221" y="440" width="165" height="1"/>
+                                        <color key="backgroundColor" red="0.4039215686" green="0.43529411759999997" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Qqp-x6-OTA"/>
+                                        </constraints>
+                                    </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QJ-eC-39T">
+                                        <rect key="frame" x="229" y="440" width="66.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="egg-n2-3BB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6h-hV-tUe">
+                                        <rect key="frame" x="28" y="477" width="22.5" height="22.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22.5" id="3oF-sf-fTi"/>
+                                            <constraint firstAttribute="width" constant="22.5" id="Ax0-9v-kfr"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" image="inactive"/>
+                                        <state key="selected" image=" active"/>
+                                        <connections>
+                                            <action selector="SaveCard_Tapped:" destination="eag-ae-omn" eventType="touchUpInside" id="5AE-nV-VJF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save this card for future use" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-Z9-gLI">
+                                        <rect key="frame" x="65.5" y="479.5" width="163.5" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="DCs-rv-zpE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" red="0.090196078430000007" green="0.1450980392" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwc-EA-GSH" userLabel="CVV Tooltip View">
+                                        <rect key="frame" x="221" y="442" width="173" height="76"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cvv_tooltip" translatesAutoresizingMaskIntoConstraints="NO" id="DRW-E1-uM1">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="76"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can find your 3-digit CVV code at the back of your card." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlh-DQ-ko9">
+                                                <rect key="frame" x="8" y="20" width="157" height="48"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                                <color key="textColor" name="darkBlue"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Vlh-DQ-ko9" firstAttribute="bottom" secondItem="DRW-E1-uM1" secondAttribute="bottom" constant="-8" id="80K-y8-7GX"/>
+                                            <constraint firstAttribute="bottom" secondItem="DRW-E1-uM1" secondAttribute="bottom" id="NW0-u8-vg6"/>
+                                            <constraint firstAttribute="trailing" secondItem="DRW-E1-uM1" secondAttribute="trailing" id="Rn3-bE-hTb"/>
+                                            <constraint firstItem="DRW-E1-uM1" firstAttribute="top" secondItem="qwc-EA-GSH" secondAttribute="top" id="a26-Vl-Qif"/>
+                                            <constraint firstItem="Vlh-DQ-ko9" firstAttribute="top" secondItem="DRW-E1-uM1" secondAttribute="top" constant="20" id="dWf-5V-H8r"/>
+                                            <constraint firstItem="Vlh-DQ-ko9" firstAttribute="trailing" secondItem="DRW-E1-uM1" secondAttribute="trailing" constant="-8" id="hoD-vX-s2x"/>
+                                            <constraint firstItem="DRW-E1-uM1" firstAttribute="leading" secondItem="qwc-EA-GSH" secondAttribute="leading" id="nWm-8P-F7d"/>
+                                            <constraint firstItem="Vlh-DQ-ko9" firstAttribute="leading" secondItem="DRW-E1-uM1" secondAttribute="leading" constant="8" id="wRc-HD-PZk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EhL-Mm-zUi" firstAttribute="trailing" secondItem="KhM-Cj-Zhv" secondAttribute="trailing" constant="8" id="0TD-nm-XWQ"/>
+                                    <constraint firstItem="puM-u2-dlp" firstAttribute="trailing" secondItem="x6w-qP-7bb" secondAttribute="trailing" id="0dR-kP-fUQ"/>
+                                    <constraint firstItem="npo-ws-6az" firstAttribute="top" secondItem="Sz5-yN-xep" secondAttribute="top" id="1Xe-nQ-W0J"/>
+                                    <constraint firstItem="YNm-Z9-gLI" firstAttribute="centerY" secondItem="Q6h-hV-tUe" secondAttribute="centerY" id="1ac-lE-Cb0"/>
+                                    <constraint firstItem="npo-ws-6az" firstAttribute="width" secondItem="Sz5-yN-xep" secondAttribute="width" id="3oh-ee-3U4"/>
+                                    <constraint firstItem="01N-MM-jKg" firstAttribute="leading" secondItem="Sz5-yN-xep" secondAttribute="leading" constant="8" id="49e-Vt-Qto"/>
+                                    <constraint firstItem="x6w-qP-7bb" firstAttribute="trailing" secondItem="uUf-Iv-aNP" secondAttribute="trailing" id="5Wb-fB-JpA"/>
+                                    <constraint firstItem="r3R-6w-64k" firstAttribute="top" secondItem="JaE-q6-mA4" secondAttribute="bottom" constant="20" id="7lE-pj-dFs"/>
+                                    <constraint firstItem="kWF-9Y-2uk" firstAttribute="leading" secondItem="F05-Wb-B6k" secondAttribute="leading" id="8Yv-KE-bfa"/>
+                                    <constraint firstItem="Q6h-hV-tUe" firstAttribute="top" secondItem="01N-MM-jKg" secondAttribute="bottom" constant="16" id="AW3-v1-vbR"/>
+                                    <constraint firstItem="kWF-9Y-2uk" firstAttribute="trailing" secondItem="F05-Wb-B6k" secondAttribute="trailing" id="B4g-D0-gSr"/>
+                                    <constraint firstItem="fRI-NU-fz8" firstAttribute="centerY" secondItem="Fwm-pw-z0A" secondAttribute="centerY" id="BCY-6q-lNj"/>
+                                    <constraint firstItem="EhL-Mm-zUi" firstAttribute="leading" secondItem="KhM-Cj-Zhv" secondAttribute="leading" constant="-8" id="BpD-W4-xTC"/>
+                                    <constraint firstItem="F05-Wb-B6k" firstAttribute="trailing" secondItem="uUf-Iv-aNP" secondAttribute="trailing" id="BwY-io-RWS"/>
+                                    <constraint firstItem="x6w-qP-7bb" firstAttribute="leading" secondItem="uUf-Iv-aNP" secondAttribute="leading" id="C1P-1Q-UVI"/>
+                                    <constraint firstItem="ct2-f2-n0Y" firstAttribute="top" secondItem="F05-Wb-B6k" secondAttribute="bottom" constant="25" id="CAv-Gm-bes"/>
+                                    <constraint firstItem="qwc-EA-GSH" firstAttribute="top" secondItem="npo-ws-6az" secondAttribute="bottom" constant="1" id="CLQ-Rc-3ug"/>
+                                    <constraint firstItem="Sz5-yN-xep" firstAttribute="leading" secondItem="4wv-lJ-xic" secondAttribute="leading" constant="-8" id="Ceo-b9-CpQ"/>
+                                    <constraint firstItem="x6w-qP-7bb" firstAttribute="leading" secondItem="r3R-6w-64k" secondAttribute="leading" constant="-8" id="EYz-ts-g9K"/>
+                                    <constraint firstItem="qwc-EA-GSH" firstAttribute="leading" secondItem="npo-ws-6az" secondAttribute="leading" id="Gek-Ap-b0w"/>
+                                    <constraint firstItem="Q6h-hV-tUe" firstAttribute="leading" secondItem="Sz5-yN-xep" secondAttribute="leading" id="Gje-Ga-u2x"/>
+                                    <constraint firstItem="Sz5-yN-xep" firstAttribute="trailing" secondItem="4wv-lJ-xic" secondAttribute="trailing" constant="8" id="HfA-CB-8Cf"/>
+                                    <constraint firstItem="uUf-Iv-aNP" firstAttribute="leading" secondItem="t7G-1E-1Gf" secondAttribute="leading" constant="28" id="Knl-K6-Lkf"/>
+                                    <constraint firstItem="x6w-qP-7bb" firstAttribute="top" secondItem="r3R-6w-64k" secondAttribute="bottom" constant="-3" id="MRx-No-nJl"/>
+                                    <constraint firstItem="x6w-qP-7bb" firstAttribute="leading" secondItem="EhL-Mm-zUi" secondAttribute="leading" id="Nc2-5Q-80I"/>
+                                    <constraint firstItem="npo-ws-6az" firstAttribute="leading" secondItem="Sz5-yN-xep" secondAttribute="trailing" constant="28" id="P2c-l3-MYB"/>
+                                    <constraint firstItem="puM-u2-dlp" firstAttribute="centerY" secondItem="r3R-6w-64k" secondAttribute="centerY" id="QFj-D0-PzK"/>
+                                    <constraint firstItem="Sz5-yN-xep" firstAttribute="top" secondItem="4wv-lJ-xic" secondAttribute="bottom" constant="-3" id="QiZ-Vi-vrk"/>
+                                    <constraint firstItem="YNm-Z9-gLI" firstAttribute="leading" secondItem="Q6h-hV-tUe" secondAttribute="trailing" constant="15" id="Rdy-rT-n7o"/>
+                                    <constraint firstItem="F05-Wb-B6k" firstAttribute="leading" secondItem="uUf-Iv-aNP" secondAttribute="leading" id="TMI-oR-kIo"/>
+                                    <constraint firstItem="01N-MM-jKg" firstAttribute="top" secondItem="4wv-lJ-xic" secondAttribute="bottom" constant="-3" id="TNI-up-9KK"/>
+                                    <constraint firstItem="ct2-f2-n0Y" firstAttribute="leading" secondItem="F05-Wb-B6k" secondAttribute="leading" id="UHO-C3-73V"/>
+                                    <constraint firstItem="4wv-lJ-xic" firstAttribute="top" secondItem="K4B-V2-hBq" secondAttribute="bottom" constant="20" id="UMw-fR-kpG"/>
+                                    <constraint firstItem="npo-ws-6az" firstAttribute="trailing" secondItem="x6w-qP-7bb" secondAttribute="trailing" id="VPe-6Z-Ee6"/>
+                                    <constraint firstItem="ct2-f2-n0Y" firstAttribute="leading" secondItem="F05-Wb-B6k" secondAttribute="leading" id="X34-Vs-lAc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q6h-hV-tUe" secondAttribute="bottom" constant="50" id="YuS-nh-2B1"/>
+                                    <constraint firstItem="uUf-Iv-aNP" firstAttribute="top" secondItem="t7G-1E-1Gf" secondAttribute="top" constant="80" id="ZXx-oe-534"/>
+                                    <constraint firstItem="npo-ws-6az" firstAttribute="top" secondItem="Fwm-pw-z0A" secondAttribute="bottom" constant="-3" id="a4T-Rs-cqB"/>
+                                    <constraint firstItem="npo-ws-6az" firstAttribute="leading" secondItem="Fwm-pw-z0A" secondAttribute="leading" constant="-8" id="a65-kc-ERi"/>
+                                    <constraint firstItem="ct2-f2-n0Y" firstAttribute="trailing" secondItem="F05-Wb-B6k" secondAttribute="trailing" id="aO5-DH-c32"/>
+                                    <constraint firstItem="x6w-qP-7bb" firstAttribute="trailing" secondItem="EhL-Mm-zUi" secondAttribute="trailing" id="cDq-SC-IMM"/>
+                                    <constraint firstItem="x6w-qP-7bb" firstAttribute="trailing" secondItem="r3R-6w-64k" secondAttribute="trailing" constant="35" id="cyI-hq-gFk"/>
+                                    <constraint firstItem="K4B-V2-hBq" firstAttribute="leading" secondItem="x6w-qP-7bb" secondAttribute="leading" constant="8" id="dEg-cN-Ix2"/>
+                                    <constraint firstItem="4QJ-eC-39T" firstAttribute="top" secondItem="Fwm-pw-z0A" secondAttribute="bottom" constant="-3" id="drR-le-rkS"/>
+                                    <constraint firstItem="npo-ws-6az" firstAttribute="trailing" secondItem="Fwm-pw-z0A" secondAttribute="trailing" constant="35" id="ehK-Tu-ZOT"/>
+                                    <constraint firstItem="fRI-NU-fz8" firstAttribute="trailing" secondItem="npo-ws-6az" secondAttribute="trailing" id="fto-ZH-AIQ"/>
+                                    <constraint firstItem="kWF-9Y-2uk" firstAttribute="top" secondItem="ct2-f2-n0Y" secondAttribute="bottom" id="giC-hA-xin"/>
+                                    <constraint firstItem="ct2-f2-n0Y" firstAttribute="trailing" secondItem="F05-Wb-B6k" secondAttribute="trailing" id="hhZ-hE-GGL"/>
+                                    <constraint firstItem="KhM-Cj-Zhv" firstAttribute="top" secondItem="kWF-9Y-2uk" secondAttribute="bottom" constant="30" id="jeH-RF-ydw"/>
+                                    <constraint firstItem="JaE-q6-mA4" firstAttribute="leading" secondItem="EhL-Mm-zUi" secondAttribute="leading" constant="8" id="jtx-tG-z57"/>
+                                    <constraint firstItem="F05-Wb-B6k" firstAttribute="top" secondItem="uUf-Iv-aNP" secondAttribute="bottom" id="kN8-2L-xRp"/>
+                                    <constraint firstItem="JaE-q6-mA4" firstAttribute="top" secondItem="KhM-Cj-Zhv" secondAttribute="bottom" constant="-3" id="neL-1B-amk"/>
+                                    <constraint firstItem="Sz5-yN-xep" firstAttribute="leading" secondItem="x6w-qP-7bb" secondAttribute="leading" id="pG9-6N-IJK"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUf-Iv-aNP" secondAttribute="trailing" constant="28" id="pt5-CN-dox"/>
+                                    <constraint firstItem="EhL-Mm-zUi" firstAttribute="top" secondItem="KhM-Cj-Zhv" secondAttribute="bottom" constant="-3" id="qp1-aQ-DlI"/>
+                                    <constraint firstItem="qwc-EA-GSH" firstAttribute="trailing" secondItem="npo-ws-6az" secondAttribute="trailing" constant="8" id="sgX-cK-9ni"/>
+                                    <constraint firstItem="uUf-Iv-aNP" firstAttribute="centerX" secondItem="t7G-1E-1Gf" secondAttribute="centerX" id="uKI-Rs-YhW"/>
+                                    <constraint firstItem="4QJ-eC-39T" firstAttribute="leading" secondItem="Fwm-pw-z0A" secondAttribute="leading" id="xtn-OX-DfZ"/>
+                                    <constraint firstItem="K4B-V2-hBq" firstAttribute="top" secondItem="r3R-6w-64k" secondAttribute="bottom" constant="-3" id="zBC-co-wJx"/>
+                                </constraints>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="e4y-qx-UBT">
+                                <rect key="frame" x="28" y="756.5" width="358" height="107.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1I-cj-6bU">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="45.5"/>
+                                        <string key="text">By clicking Authorize Transfer, I hereby confirm that I've reviewed the transaction details and I'll fund the transaction from my credit card.</string>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="13"/>
+                                        <color key="textColor" name="darkBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-qJ-K8w">
+                                        <rect key="frame" x="0.0" y="59.5" width="358" height="48"/>
+                                        <color key="backgroundColor" red="0.1019607843" green="0.1450980392" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="YTq-7j-TN1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                        <state key="normal" title="Confirm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.22523280979999999" green="0.27987313270000003" blue="0.43463468550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Confirm_Tapped:" destination="eag-ae-omn" eventType="touchUpInside" id="D2G-hu-Qma"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tqw-ND-IiG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e4y-qx-UBT" firstAttribute="leading" secondItem="noW-nG-S17" secondAttribute="leading" constant="28" id="1iO-M6-F1z"/>
+                            <constraint firstAttribute="bottom" secondItem="e4y-qx-UBT" secondAttribute="bottom" constant="32" id="4W1-NC-sCe"/>
+                            <constraint firstAttribute="trailing" secondItem="e4y-qx-UBT" secondAttribute="trailing" constant="28" id="IqU-Yy-Rau"/>
+                            <constraint firstItem="t7G-1E-1Gf" firstAttribute="top" secondItem="tqw-ND-IiG" secondAttribute="top" id="oSC-YO-kUz"/>
+                            <constraint firstItem="t7G-1E-1Gf" firstAttribute="leading" secondItem="tqw-ND-IiG" secondAttribute="leading" id="po3-Ay-b71"/>
+                            <constraint firstItem="tqw-ND-IiG" firstAttribute="trailing" secondItem="t7G-1E-1Gf" secondAttribute="trailing" id="py4-vS-cXc"/>
+                            <constraint firstItem="e4y-qx-UBT" firstAttribute="top" secondItem="t7G-1E-1Gf" secondAttribute="bottom" id="uJi-em-ZUF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomStackViewBottomConstraint" destination="4W1-NC-sCe" id="Hyg-vc-gIq"/>
+                        <outlet property="cameraButton" destination="puM-u2-dlp" id="dgI-W7-mt7"/>
+                        <outlet property="infoButton" destination="fRI-NU-fz8" id="lDY-r5-a7V"/>
+                        <outlet property="labelAmount" destination="F05-Wb-B6k" id="9FF-rN-DI5"/>
+                        <outlet property="labelConfirmDesc" destination="G1I-cj-6bU" id="b0K-FU-SjZ"/>
+                        <outlet property="labelErrorCVV" destination="4QJ-eC-39T" id="bk4-AB-DXW"/>
+                        <outlet property="labelErrorCardHolderName" destination="JaE-q6-mA4" id="onG-p5-sTg"/>
+                        <outlet property="labelErrorCardNumber" destination="K4B-V2-hBq" id="IoT-Rq-vUb"/>
+                        <outlet property="labelErrorExpiryDate" destination="01N-MM-jKg" id="9O5-GO-bdU"/>
+                        <outlet property="labelMethod" destination="kWF-9Y-2uk" id="fz1-Q2-gWe"/>
+                        <outlet property="labelSavedCard" destination="YNm-Z9-gLI" id="GF7-1I-g9S"/>
+                        <outlet property="labelTooltipCVV" destination="Vlh-DQ-ko9" id="BiR-Ad-jrD"/>
+                        <outlet property="saveCardButton" destination="Q6h-hV-tUe" id="QY9-sR-kvs"/>
+                        <outlet property="scrollView" destination="t7G-1E-1Gf" id="vMy-i7-Pai"/>
+                        <outlet property="submitButton" destination="7lf-qJ-K8w" id="l7h-wz-9KO"/>
+                        <outlet property="textFieldCVV" destination="Fwm-pw-z0A" id="jv0-vC-FYW"/>
+                        <outlet property="textFieldCardHolderName" destination="KhM-Cj-Zhv" id="gP4-4q-K1g"/>
+                        <outlet property="textFieldCardNumber" destination="r3R-6w-64k" id="9cV-i5-1u2"/>
+                        <outlet property="textFieldExpiryDate" destination="4wv-lJ-xic" id="iY2-Nz-qce"/>
+                        <outlet property="tooltipContainerView" destination="qwc-EA-GSH" id="4al-ph-QvR"/>
+                        <outletCollection property="textFieldBottomView" destination="EhL-Mm-zUi" collectionClass="NSMutableArray" id="K9z-I0-Dqv"/>
+                        <outletCollection property="textFieldBottomView" destination="x6w-qP-7bb" collectionClass="NSMutableArray" id="gda-wv-01a"/>
+                        <outletCollection property="textFieldBottomView" destination="Sz5-yN-xep" collectionClass="NSMutableArray" id="zSa-fe-BaT"/>
+                        <outletCollection property="textFieldBottomView" destination="npo-ws-6az" collectionClass="NSMutableArray" id="B0r-yn-hCa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfG-Tl-wdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.68115942029" y="-48.214285714285715"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="4wv-lJ-xic">
+            <size key="intrinsicContentSize" width="81" height="26.5"/>
+        </designable>
+        <designable name="Fwm-pw-z0A">
+            <size key="intrinsicContentSize" width="31.5" height="25"/>
+        </designable>
+        <designable name="KhM-Cj-Zhv">
+            <size key="intrinsicContentSize" width="124" height="26.5"/>
+        </designable>
+        <designable name="r3R-6w-64k">
+            <size key="intrinsicContentSize" width="94" height="26.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name=" active" width="24" height="24"/>
+        <image name="InfoImage" width="24" height="24"/>
+        <image name="cvv_tooltip" width="152" height="76"/>
+        <image name="icon-camera" width="24" height="24"/>
+        <image name="inactive" width="24" height="24"/>
+        <image name="showEye" width="24" height="24"/>
+        <namedColor name="darkBlue">
+            <color red="0.090196078431372548" green="0.14509803921568629" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlueTint1">
+            <color red="0.40392156862745099" green="0.43529411764705883" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

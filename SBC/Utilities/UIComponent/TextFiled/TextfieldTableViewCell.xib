@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TextfieldTableViewCell" customModule="ONZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efB-Zo-cKu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E7-6O-Ki3" customClass="CustomTextfieldView" customModule="ONZ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0E7-6O-Ki3" secondAttribute="bottom" id="3T6-jL-gTT"/>
+                            <constraint firstItem="0E7-6O-Ki3" firstAttribute="leading" secondItem="efB-Zo-cKu" secondAttribute="leading" id="EUf-dG-ISk"/>
+                            <constraint firstItem="0E7-6O-Ki3" firstAttribute="top" secondItem="efB-Zo-cKu" secondAttribute="top" id="JLP-iL-6Bj"/>
+                            <constraint firstAttribute="trailing" secondItem="0E7-6O-Ki3" secondAttribute="trailing" id="iiR-Jc-7a3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="efB-Zo-cKu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1QF-C7-eCy"/>
+                    <constraint firstAttribute="bottom" secondItem="efB-Zo-cKu" secondAttribute="bottom" id="pYk-L5-8YP"/>
+                    <constraint firstAttribute="trailing" secondItem="efB-Zo-cKu" secondAttribute="trailing" id="v0g-jh-B77"/>
+                    <constraint firstItem="efB-Zo-cKu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wXn-Kl-cjh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="efB-Zo-cKu" id="WOD-Vt-J4n"/>
+                <outlet property="textfield" destination="0E7-6O-Ki3" id="mqt-uV-D6Z"/>
+                <outlet property="viewBottom" destination="pYk-L5-8YP" id="49w-uZ-Ka8"/>
+                <outlet property="viewLeading" destination="1QF-C7-eCy" id="0lw-J7-x5m"/>
+                <outlet property="viewTop" destination="wXn-Kl-cjh" id="La9-Lv-Hci"/>
+                <outlet property="viewTrailing" destination="v0g-jh-B77" id="aHc-7a-Kxe"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="120.08995502248877"/>
+        </tableViewCell>
+    </objects>
+</document>

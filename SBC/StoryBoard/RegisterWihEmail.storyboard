@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EZv-1u-aqB">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="oju-Kq-oLP">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="EZv-1u-aqB" customClass="SignUpViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nj6-Po-eKR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftSquare" translatesAutoresizingMaskIntoConstraints="NO" id="qi1-da-Fhs">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="sQe-rM-mtd"/>
+                                    <constraint firstAttribute="height" constant="374" id="yEX-tc-e8G"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ef3-hT-6wv">
+                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qi1-da-Fhs" firstAttribute="leading" secondItem="W9M-9J-q2J" secondAttribute="leading" id="2Ic-lm-wV0"/>
+                            <constraint firstItem="Ef3-hT-6wv" firstAttribute="leading" secondItem="W9M-9J-q2J" secondAttribute="leading" id="OHr-h1-d3G"/>
+                            <constraint firstItem="Ef3-hT-6wv" firstAttribute="trailing" secondItem="W9M-9J-q2J" secondAttribute="trailing" id="QsK-nr-gyR"/>
+                            <constraint firstItem="Ef3-hT-6wv" firstAttribute="bottom" secondItem="W9M-9J-q2J" secondAttribute="bottom" id="T0v-NT-aCf"/>
+                            <constraint firstItem="qi1-da-Fhs" firstAttribute="top" secondItem="W9M-9J-q2J" secondAttribute="top" constant="-44" id="dMV-aO-9pE"/>
+                            <constraint firstItem="Ef3-hT-6wv" firstAttribute="top" secondItem="W9M-9J-q2J" secondAttribute="top" constant="70" id="eoT-wu-QfQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W9M-9J-q2J"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="signUpTableView" destination="Ef3-hT-6wv" id="ACM-Mn-gIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4K-3U-ank" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="leftSquare" width="259" height="273"/>
+    </resources>
+</document>

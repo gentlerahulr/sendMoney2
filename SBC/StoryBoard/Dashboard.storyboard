@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+        <array key="DMSans-Medium.ttf">
+            <string>DMSans-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Dash Board View Controller-->
+        <scene sceneID="ndx-Et-QLl">
+            <objects>
+                <viewController storyboardIdentifier="DashBoardViewController" id="piU-p9-yBQ" customClass="DashBoardViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rzs-KS-Pjj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuJ-Ht-Ur5">
+                                <rect key="frame" x="24" y="0.0" width="327" height="176.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ee3-tb-9P7">
+                                        <rect key="frame" x="0.0" y="16" width="228" height="136.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1F-7E-zvm">
+                                                <rect key="frame" x="0.0" y="0.0" width="228" height="19"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1L-dP-B4d">
+                                                <rect key="frame" x="0.0" y="27" width="228" height="45.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                                <color key="textColor" red="0.0" green="0.69019607839999997" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATc-SK-bTI">
+                                                <rect key="frame" x="0.0" y="80.5" width="228" height="56"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldu-ij-AON">
+                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="56"/>
+                                                        <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="13"/>
+                                                        <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="16" maxY="16"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-16" maxY="0.0"/>
+                                                        <state key="normal" title="Top up" image="icon-plus"/>
+                                                        <connections>
+                                                            <action selector="didTappedTopUpButton:" destination="piU-p9-yBQ" eventType="touchUpInside" id="QOa-lU-Umf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY5-En-9cD">
+                                                        <rect key="frame" x="110" y="0.0" width="96" height="56"/>
+                                                        <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="13"/>
+                                                        <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="16" maxY="16"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-16" maxY="0.0"/>
+                                                        <state key="normal" title="Withdraw" image="icon-send"/>
+                                                        <connections>
+                                                            <action selector="didTappedWithdrawButton:" destination="piU-p9-yBQ" eventType="touchUpInside" id="6q4-13-9Y0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="iY5-En-9cD" firstAttribute="top" secondItem="ATc-SK-bTI" secondAttribute="top" id="1U3-gJ-8xQ"/>
+                                                    <constraint firstItem="ldu-ij-AON" firstAttribute="top" secondItem="ATc-SK-bTI" secondAttribute="top" id="Kuh-Ji-4PW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iY5-En-9cD" secondAttribute="trailing" id="Vvh-xN-wPF"/>
+                                                    <constraint firstItem="ldu-ij-AON" firstAttribute="leading" secondItem="ATc-SK-bTI" secondAttribute="leading" id="cyY-Jt-qHD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iY5-En-9cD" secondAttribute="bottom" id="gkT-Ar-dIN"/>
+                                                    <constraint firstItem="iY5-En-9cD" firstAttribute="leading" secondItem="ldu-ij-AON" secondAttribute="trailing" constant="24" id="kbz-zc-e48"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iY5-En-9cD" secondAttribute="trailing" constant="22" id="mPb-Kt-aSR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ldu-ij-AON" secondAttribute="bottom" id="tFg-9v-XrW"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4u-iY-mVB">
+                                        <rect key="frame" x="295" y="8" width="40" height="40"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" image="icon-card"/>
+                                        <connections>
+                                            <action selector="manageWalletButtonAction:" destination="piU-p9-yBQ" eventType="touchUpInside" id="4Ho-nG-E0U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ee3-tb-9P7" firstAttribute="leading" secondItem="zuJ-Ht-Ur5" secondAttribute="leading" id="4aA-XH-beI"/>
+                                    <constraint firstItem="ee3-tb-9P7" firstAttribute="top" secondItem="zuJ-Ht-Ur5" secondAttribute="topMargin" constant="8" id="EcA-xo-yLF"/>
+                                    <constraint firstAttribute="trailing" secondItem="y4u-iY-mVB" secondAttribute="trailing" constant="-8" id="FrK-AC-1i5"/>
+                                    <constraint firstItem="y4u-iY-mVB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ee3-tb-9P7" secondAttribute="trailing" id="Wml-mv-JaL"/>
+                                    <constraint firstAttribute="bottom" secondItem="ee3-tb-9P7" secondAttribute="bottom" constant="24" id="cnf-5L-DqL"/>
+                                    <constraint firstItem="y4u-iY-mVB" firstAttribute="top" secondItem="zuJ-Ht-Ur5" secondAttribute="topMargin" id="ePB-wS-o0j"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5o-EC-jKr">
+                                <rect key="frame" x="0.0" y="176.5" width="375" height="490.5"/>
+                                <connections>
+                                    <segue destination="PbK-Yk-y2q" kind="embed" id="gpp-eb-D7q"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pXV-34-8Vl"/>
+                        <color key="backgroundColor" name="darkBlue"/>
+                        <constraints>
+                            <constraint firstItem="zuJ-Ht-Ur5" firstAttribute="leading" secondItem="Rzs-KS-Pjj" secondAttribute="leadingMargin" id="2kJ-hq-mu4"/>
+                            <constraint firstItem="pXV-34-8Vl" firstAttribute="trailing" secondItem="K5o-EC-jKr" secondAttribute="trailing" id="47h-V2-rhi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zuJ-Ht-Ur5" secondAttribute="trailing" id="F6v-OG-C5z"/>
+                            <constraint firstItem="zuJ-Ht-Ur5" firstAttribute="top" secondItem="Rzs-KS-Pjj" secondAttribute="topMargin" id="G1I-XW-8Bn"/>
+                            <constraint firstItem="K5o-EC-jKr" firstAttribute="top" secondItem="zuJ-Ht-Ur5" secondAttribute="bottom" id="JAF-f9-Nxb"/>
+                            <constraint firstItem="K5o-EC-jKr" firstAttribute="leading" secondItem="pXV-34-8Vl" secondAttribute="leading" id="eEy-wD-kgS"/>
+                            <constraint firstAttribute="bottom" secondItem="K5o-EC-jKr" secondAttribute="bottom" id="laD-oD-M4Z"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="0.0" left="24" bottom="0.0" right="24"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KqX-9k-sCj">
+                        <barButtonItem key="backBarButtonItem" title=" " id="5L7-M3-Ph4"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonTopup" destination="ldu-ij-AON" id="Wn1-k0-YBv"/>
+                        <outlet property="buttonWithdraw" destination="iY5-En-9cD" id="qyc-iy-Ftd"/>
+                        <outlet property="labelBalance" destination="W1F-7E-zvm" id="fS0-TB-DmK"/>
+                        <outlet property="labelBalanceValue" destination="O1L-dP-B4d" id="bfx-hZ-SiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5b-mu-mgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="67.016491754122939"/>
+        </scene>
+        <!--Transaction List View Controller-->
+        <scene sceneID="SNW-tt-bUb">
+            <objects>
+                <viewController id="PbK-Yk-y2q" customClass="TransactionListViewController" customModule="ONZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l1v-Ww-eWg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="488.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7Ch-N9-fr1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aA8-eJ-Hlh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="666"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-card" width="24" height="24"/>
+        <image name="icon-plus" width="24" height="24"/>
+        <image name="icon-send" width="24" height="24"/>
+        <namedColor name="darkBlue">
+            <color red="0.090196078431372548" green="0.14509803921568629" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

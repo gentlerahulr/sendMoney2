@@ -1,0 +1,101 @@
+{
+    "data": [{
+        "id": "123",
+        "name": "Fancy Restaurant",
+        "type": "venue",
+        "rating": 1.2,
+        "priceBracket": 1,
+        "cuisines": [{
+            "id": "3",
+            "name": "Burger"
+        }],
+        "area": "Downtown",
+        "imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+    }, {
+        "id": "234",
+        "name": "Some playlist",
+        "type": "playlist",
+        "imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg",
+        "placeCount": 1,
+        "likeCount": 23
+    }, {
+        "id": "3",
+        "name": "Burger",
+        "type": "cuisine"
+    },
+    {
+        "id": "223",
+        "name": "Fake Restaurant",
+        "type": "venue",
+        "rating": 4.2,
+        "priceBracket": 3,
+        "cuisines": [{
+            "id": "3",
+            "name": "Mexican"
+        }],
+        "area": "Financial District",
+        "imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+    }, {
+        "id": "234",
+        "name": "Some playlist",
+        "type": "playlist",
+        "imageUrl": "https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search-v2_297x176.jpg",
+        "placeCount": 1,
+        "likeCount": 23
+    }, {
+        "id": "3",
+        "name": "Burger",
+        "type": "cuisine"
+    },
+    {
+        "id": "123",
+        "name": "Fancy Restaurant",
+        "type": "venue",
+        "rating": 1.2,
+        "priceBracket": 1,
+        "cuisines": [{
+            "id": "3",
+            "name": "Burger"
+        }],
+        "area": "Downtown",
+        "imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+    }, {
+        "id": "234",
+        "name": "Some playlist",
+        "type": "playlist",
+        "imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg",
+        "placeCount": 1,
+        "likeCount": 23
+    }, {
+        "id": "3",
+        "name": "Burger",
+        "type": "cuisine"
+    },
+    {
+        "id": "223",
+        "name": "Fake Restaurant",
+        "type": "venue",
+        "rating": 4.2,
+        "priceBracket": 3,
+        "cuisines": [{
+            "id": "3",
+            "name": "Mexican"
+        }],
+        "area": "Financial District",
+        "imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+    }, {
+        "id": "234",
+        "name": "Some playlist",
+        "type": "playlist",
+        "imageUrl": "https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search-v2_297x176.jpg",
+        "placeCount": 1,
+        "likeCount": 23
+    }, {
+        "id": "3",
+        "name": "Burger",
+        "type": "cuisine"
+    }],
+    "limit": 5,
+    "count": 3,
+    "nextPageToken": "eyJPcmRlckRlc2NlbmRpbmciOiJ4ID0-IHguVXBkYXRlZCIsIk9yZGVyQnkiOm51bGwsIlRoZW5EZXNjZW5kaW5nIjpudWxsLCJUaGVuQnkiOm51bGwsIlBhcmFtcyI6eyJVcGRhdGVkIjoiMjAyMC0xMS0xMFQxMTozNToyMC43OTg1NTUrMDA6MDAifX0"
+}

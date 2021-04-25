@@ -1,0 +1,803 @@
+{
+    "header": {
+        "success": true,
+        "authenticated": true
+    },
+    "payload": [
+        {
+            "category": "Hobbies",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3Gmzw=",
+                "date": "2020-08-03"
+            },
+            "count": 18,
+            "min_debit_amount": 3.01,
+            "max_debit_amount": 96.94,
+            "sum": -354.57,
+            "type": "standard",
+            "parent": "Shopping",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Hobbies",
+                    "label": "Hobbies"
+                }
+            ]
+        },
+        {
+            "category": "Shopping",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3BlDw=",
+                "date": "2020-07-26"
+            },
+            "count": 13,
+            "min_debit_amount": 2.79,
+            "max_debit_amount": 111.2,
+            "sum": -283.69,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Shopping",
+                    "label": "Shopping"
+                }
+            ]
+        },
+        {
+            "category": "Taxi",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz/LlTw=",
+                "date": "2020-06-28"
+            },
+            "count": 7,
+            "min_debit_amount": 8.6,
+            "max_debit_amount": 21.5,
+            "sum": -109.85,
+            "type": "standard",
+            "parent": "TransportAuto",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Taxi",
+                    "label": "Taxi"
+                }
+            ]
+        },
+        {
+            "category": "Education",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3Gnzw=",
+                "date": "2020-07-29"
+            },
+            "count": 6,
+            "min_debit_amount": 53.5,
+            "max_debit_amount": 14148,
+            "sum": -33436.7,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Education",
+                    "label": "Education"
+                }
+            ]
+        },
+        {
+            "category": "BillsUtilities",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3GlTw=",
+                "date": "2020-08-05"
+            },
+            "count": 5,
+            "min_debit_amount": 2358,
+            "max_debit_amount": 14148,
+            "sum": -23580,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "BillsUtilities",
+                    "label": "Bills & Utilities"
+                }
+            ]
+        },
+        {
+            "category": "Electronics",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHzzFlDw=",
+                "date": "2020-07-09"
+            },
+            "count": 4,
+            "min_debit_amount": 2.79,
+            "max_debit_amount": 558,
+            "sum": -603.42,
+            "type": "standard",
+            "parent": "Shopping",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Electronics",
+                    "label": "Electronics"
+                }
+            ]
+        },
+        {
+            "category": "Internet",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3GmDw=",
+                "date": "2020-08-02"
+            },
+            "count": 4,
+            "min_debit_amount": 2.79,
+            "max_debit_amount": 23.14,
+            "sum": -71.09,
+            "type": "standard",
+            "parent": "BillsUtilities",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Internet",
+                    "label": "Internet"
+                }
+            ]
+        },
+        {
+            "category": "PublicTransport",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHzzGnjw=",
+                "date": "2020-07-04"
+            },
+            "count": 4,
+            "min_debit_amount": 1.12,
+            "max_debit_amount": 25,
+            "sum": -29.76,
+            "type": "standard",
+            "parent": "TransportAuto",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "PublicTransport",
+                    "label": "Public Transport"
+                }
+            ]
+        },
+        {
+            "category": "Parking",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3GmTw=",
+                "date": "2020-08-01"
+            },
+            "count": 4,
+            "min_debit_amount": 0.6,
+            "max_debit_amount": 2.04,
+            "sum": -4.44,
+            "type": "standard",
+            "parent": "TransportAuto",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Parking",
+                    "label": "Parking"
+                }
+            ]
+        },
+        {
+            "category": "Restaurants",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3Bmzw=",
+                "date": "2020-07-24"
+            },
+            "count": 4,
+            "min_debit_amount": 15.3,
+            "max_debit_amount": 101.15,
+            "sum": -212.31,
+            "type": "standard",
+            "parent": "FoodDining",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Restaurants",
+                    "label": "Restaurants"
+                }
+            ]
+        },
+        {
+            "category": "Television",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3Gnjw=",
+                "date": "2020-07-31"
+            },
+            "count": 4,
+            "min_debit_amount": 19.98,
+            "max_debit_amount": 99.88,
+            "sum": -160.02,
+            "type": "standard",
+            "parent": "BillsUtilities",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Television",
+                    "label": "Television"
+                }
+            ]
+        },
+        {
+            "category": "Hotel",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3BnDw=",
+                "date": "2020-07-19"
+            },
+            "count": 3,
+            "min_debit_amount": 367.75,
+            "max_debit_amount": 374.78,
+            "sum": -1111.94,
+            "type": "standard",
+            "parent": "Travel",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Hotel",
+                    "label": "Hotel"
+                }
+            ]
+        },
+        {
+            "category": "Groceries",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHzzKmjw=",
+                "date": "2020-07-10"
+            },
+            "count": 2,
+            "min_debit_amount": 13.6,
+            "max_debit_amount": 72.55,
+            "sum": -86.15,
+            "type": "standard",
+            "parent": "FoodDining",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Groceries",
+                    "label": "Groceries"
+                }
+            ]
+        },
+        {
+            "category": "FoodDining",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz/CnTw=",
+                "date": "2020-06-13"
+            },
+            "count": 1,
+            "min_debit_amount": 3,
+            "max_debit_amount": 3,
+            "sum": -3,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "FoodDining",
+                    "label": "Food & Dining"
+                }
+            ]
+        },
+        {
+            "category": "Entertainment",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3Gmjw=",
+                "date": "2020-08-03"
+            },
+            "count": 1,
+            "min_debit_amount": 29.27,
+            "max_debit_amount": 29.27,
+            "sum": -29.27,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Entertainment",
+                    "label": "Entertainment"
+                }
+            ]
+        },
+        {
+            "category": "kidsgaming",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3Gmjw=",
+                "date": "2020-08-03"
+            },
+            "count": 1,
+            "min_debit_amount": 29.27,
+            "max_debit_amount": 29.27,
+            "sum": -29.27,
+            "type": "custom"
+        },
+        {
+            "category": "BusinessServices",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz/Fmzw=",
+                "date": "2020-06-26"
+            },
+            "count": 1,
+            "min_debit_amount": 404,
+            "max_debit_amount": 404,
+            "sum": -404,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "BusinessServices",
+                    "label": "Business Services"
+                }
+            ]
+        },
+        {
+            "category": "some_tag",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3Gnjw=",
+                "date": "2020-07-31"
+            },
+            "count": 1,
+            "min_debit_amount": 99.88,
+            "max_debit_amount": 99.88,
+            "sum": -99.88,
+            "type": "custom"
+        },
+        {
+            "category": "workfromhome",
+            "last_occurrence": {
+                "key": "hp4F3LQT4MRgHz3BlDw=",
+                "date": "2020-07-26"
+            },
+            "count": 1,
+            "min_debit_amount": 27.6,
+            "max_debit_amount": 27.6,
+            "sum": -27.6,
+            "type": "custom"
+        },
+        {
+            "category": "SpaMassage",
+            "count": 0,
+            "type": "standard",
+            "parent": "PersonalCare",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "SpaMassage",
+                    "label": "Spa & Massage"
+                }
+            ]
+        },
+        {
+            "category": "HealthFitness",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "HealthFitness",
+                    "label": "Health & Fitness"
+                }
+            ]
+        },
+        {
+            "category": "MobilePhone",
+            "count": 0,
+            "type": "standard",
+            "parent": "BillsUtilities",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "MobilePhone",
+                    "label": "Mobile Phone"
+                }
+            ]
+        },
+        {
+            "category": "CoffeeShops",
+            "count": 0,
+            "type": "standard",
+            "parent": "FoodDining",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "CoffeeShops",
+                    "label": "Coffee Shops"
+                }
+            ]
+        },
+        {
+            "category": "Utilities",
+            "count": 0,
+            "type": "standard",
+            "parent": "BillsUtilities",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Utilities",
+                    "label": "Utilities"
+                }
+            ]
+        },
+        {
+            "category": "AutoMaintenance",
+            "count": 0,
+            "type": "standard",
+            "parent": "TransportAuto",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "AutoMaintenance",
+                    "label": "Auto Maintenance"
+                }
+            ]
+        },
+        {
+            "category": "Gym",
+            "count": 0,
+            "type": "standard",
+            "parent": "HealthFitness",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Gym",
+                    "label": "Gym"
+                }
+            ]
+        },
+        {
+            "category": "Sports",
+            "count": 0,
+            "type": "standard",
+            "parent": "HealthFitness",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Sports",
+                    "label": "Sports"
+                }
+            ]
+        },
+        {
+            "category": "Hair",
+            "count": 0,
+            "type": "standard",
+            "parent": "PersonalCare",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Hair",
+                    "label": "Hair"
+                }
+            ]
+        },
+        {
+            "category": "Clothing",
+            "count": 0,
+            "type": "standard",
+            "parent": "Shopping",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Clothing",
+                    "label": "Clothing"
+                }
+            ]
+        },
+        {
+            "category": "AutoPayment",
+            "count": 0,
+            "type": "standard",
+            "parent": "TransportAuto",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "AutoPayment",
+                    "label": "AutoPayment"
+                }
+            ]
+        },
+        {
+            "category": "Kids",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Kids",
+                    "label": "Kids"
+                }
+            ]
+        },
+        {
+            "category": "Taxes",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Taxes",
+                    "label": "Taxes"
+                }
+            ]
+        },
+        {
+            "category": "Pharmacy",
+            "count": 0,
+            "type": "standard",
+            "parent": "HealthFitness",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Pharmacy",
+                    "label": "Pharmacy"
+                }
+            ]
+        },
+        {
+            "category": "TransportAuto",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "TransportAuto",
+                    "label": "Transport & Auto"
+                }
+            ]
+        },
+        {
+            "category": "Train",
+            "count": 0,
+            "type": "standard",
+            "parent": "Travel",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Train",
+                    "label": "Train"
+                }
+            ]
+        },
+        {
+            "category": "GiftsDonations",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "GiftsDonations",
+                    "label": "Gifts & Donations"
+                }
+            ]
+        },
+        {
+            "category": "Dentist",
+            "count": 0,
+            "type": "standard",
+            "parent": "HealthFitness",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Dentist",
+                    "label": "Dentist"
+                }
+            ]
+        },
+        {
+            "category": "PersonalCare",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "PersonalCare",
+                    "label": "Personal Care"
+                }
+            ]
+        },
+        {
+            "category": "Holidays",
+            "count": 0,
+            "type": "standard",
+            "parent": "Travel",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Holidays",
+                    "label": "Holidays"
+                }
+            ]
+        },
+        {
+            "category": "SportingGoods",
+            "count": 0,
+            "type": "standard",
+            "parent": "Shopping",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "SportingGoods",
+                    "label": "Sporting Goods"
+                }
+            ]
+        },
+        {
+            "category": "Investments",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Investments",
+                    "label": "Investments"
+                }
+            ]
+        },
+        {
+            "category": "GasFuel",
+            "count": 0,
+            "type": "standard",
+            "parent": "TransportAuto",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "GasFuel",
+                    "label": "Gas & Fuel"
+                }
+            ]
+        },
+        {
+            "category": "RentalCar",
+            "count": 0,
+            "type": "standard",
+            "parent": "Travel",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "RentalCar",
+                    "label": "Rental Car"
+                }
+            ]
+        },
+        {
+            "category": "Books",
+            "count": 0,
+            "type": "standard",
+            "parent": "Shopping",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Books",
+                    "label": "Books"
+                }
+            ]
+        },
+        {
+            "category": "FeesCharges",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "FeesCharges",
+                    "label": "Fees & Charges"
+                }
+            ]
+        },
+        {
+            "category": "Eyecare",
+            "count": 0,
+            "type": "standard",
+            "parent": "HealthFitness",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Eyecare",
+                    "label": "Eyecare"
+                }
+            ]
+        },
+        {
+            "category": "AirTravel",
+            "count": 0,
+            "type": "standard",
+            "parent": "Travel",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "AirTravel",
+                    "label": "Air Travel"
+                }
+            ]
+        },
+        {
+            "category": "FastFood",
+            "count": 0,
+            "type": "standard",
+            "parent": "FoodDining",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "FastFood",
+                    "label": "Fast Food"
+                }
+            ]
+        },
+        {
+            "category": "Doctor",
+            "count": 0,
+            "type": "standard",
+            "parent": "HealthFitness",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Doctor",
+                    "label": "Doctor"
+                }
+            ]
+        },
+        {
+            "category": "Travel",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Travel",
+                    "label": "Travel"
+                }
+            ]
+        },
+        {
+            "category": "HomePhone",
+            "count": 0,
+            "type": "standard",
+            "parent": "BillsUtilities",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "HomePhone",
+                    "label": "Home Phone"
+                }
+            ]
+        },
+        {
+            "category": "Insurance",
+            "count": 0,
+            "type": "standard",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Insurance",
+                    "label": "Insurance"
+                }
+            ]
+        },
+        {
+            "category": "Laundry",
+            "count": 0,
+            "type": "standard",
+            "parent": "PersonalCare",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Laundry",
+                    "label": "Laundry"
+                }
+            ]
+        },
+        {
+            "category": "Bars",
+            "count": 0,
+            "type": "standard",
+            "parent": "FoodDining",
+            "locales": [
+                {
+                    "language": "en",
+                    "value": "Bars",
+                    "label": "Bars"
+                }
+            ]
+        }
+    ]
+}

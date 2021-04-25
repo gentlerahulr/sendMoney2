@@ -1,0 +1,237 @@
+
+{
+    "data":
+    {
+        "id": "id",
+        "title": "Playlist title goes here max 50 characters",
+        "subtitle": "Playlist subtitle maximum 45 characters",
+        "likeCount": 21,
+        "placeCount": 4,
+        "description": "",
+        "isLiked": true,
+        "updated": "2020-10-01",
+        "creator": {
+            "id": "id",
+            "username": "me",
+            "profilePictureUrl": ""
+        },
+        "venues": {
+            "nextPageToken": "",
+            "limit": 10,
+            "count": 4,
+            "updated": "2020-10-01",
+            "data": [
+                {
+                    "id": "id",
+                    "name": "Venue with caption",
+                    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae nisi id erat vulputate sodales. Vestibulum eu sodales quam. Aliquam enim augue, lobortis sit amet rutrum etrt.",
+                    "imageUrl": "https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/image-19.png",
+                    "priceBracket": 1,
+                    "category": "Drinks",
+                    "area": "Area Name",
+                    "likeCount": 10,
+                    "hasDeals": false,
+                    "isLiked": false,
+                    "googlePlacesId": "string",
+                    "address": "string",
+                    "badgeUrl": "https://www.onestopaerosols.co.uk/img/colours/ral-3026-luminous-bright-red.jpg",
+                    "openingHours": "string",
+                    "starRating": 4.2,
+                    "menuUrl": "https://www.google.com",
+                    "phoneNumber": "string",
+                    "facebookUrl": "string",
+                    "websiteUrl": "string",
+                    "bookingUrl": "string",
+                    "deals": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "name": "string",
+                                "expiryDate": "2019-08-24T14:15:22Z",
+                                "type": "string",
+                                "providerName": "string",
+                                "providerIconUrl": "string",
+                                "url": "string"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "reviews": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "source": "string",
+                                "rating": 0,
+                                "url": "string",
+                                "updated": "2019-08-24T14:15:22Z"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "hashtags": ["nightout", "family", "livemusic", "dinner", "romantic", "lunch", "brunch"]
+                },
+                {
+                    "id": "id",
+                    "name": "Venue without caption",
+                    "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                    "priceBracket": 1,
+                    "category": "Food",
+                    "area": "Area Name",
+                    "likeCount": 1,
+                    "hasDeals": true,
+                    "isLiked": true,
+                    "googlePlacesId": "string",
+                    "address": "string",
+                    "openingHours": "string",
+                    "starRating": 3.1,
+                    "phoneNumber": "string",
+                    "facebookUrl": "string",
+                    "websiteUrl": "string",
+                    "bookingUrl": "string",
+                    "deals": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "name": "string",
+                                "expiryDate": "2019-08-24T14:15:22Z",
+                                "type": "string",
+                                "providerName": "string",
+                                "providerIconUrl": "string",
+                                "url": "string"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "reviews": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "source": "string",
+                                "rating": 0,
+                                "url": "string",
+                                "updated": "2019-08-24T14:15:22Z"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "hashtags": ["nightout"]
+                    
+                },
+                {
+                    "id": "id",
+                    "name": "Venue with small caption",
+                    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio. Vivamus vitae",
+                    "imageUrl": "https://www.banks-sadler.com/wp-content/uploads/2018/03/sky-garden-2.jpg",
+                    "priceBracket": 5,
+                    "category": "Food",
+                    "area": "Area Name",
+                    "likeCount": 1,
+                    "hasDeals": true,
+                    "isLiked": true,
+                    "googlePlacesId": "string",
+                    "address": "string",
+                    "badgeUrl": "",
+                    "openingHours": "string",
+                    "starRating": 4.2,
+                    "menuUrl": "",
+                    "phoneNumber": "string",
+                    "facebookUrl": "string",
+                    "websiteUrl": "www.google.com",
+                    "bookingUrl": "string",
+                    "deals": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "name": "string",
+                                "expiryDate": "2019-08-24T14:15:22Z",
+                                "type": "string",
+                                "providerName": "string",
+                                "providerIconUrl": "string",
+                                "url": "string"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "reviews": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "source": "string",
+                                "rating": 0,
+                                "url": "string",
+                                "updated": "2019-08-24T14:15:22Z"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "hashtags": ["nightout", "family"]
+                    
+                },
+                {
+                    "id": "id",
+                    "name": "Venue with small caption",
+                    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam elit, vulputate id fringilla eu, interdum convallis odio.",
+                    "imageUrl": "https://static.dnls.nl/home/5/60P9A7yn96sltKNLXJKFed/all-event-venues-of-london.jpg",
+                    "priceBracket": 2,
+                    "category": "Food",
+                    "area": "Area Name",
+                    "likeCount": 0,
+                    "hasDeals": true,
+                    "isLiked": true,
+                    "googlePlacesId": "string",
+                    "address": "string",
+                    "badgeUrl": "string",
+                    "openingHours": "string",
+                    "menuUrl": "string",
+                    "phoneNumber": "string",
+                    "facebookUrl": "string",
+                    "websiteUrl": "string",
+                    "bookingUrl": "string",
+                    "deals": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "name": "string",
+                                "expiryDate": "2019-08-24T14:15:22Z",
+                                "type": "string",
+                                "providerName": "string",
+                                "providerIconUrl": "string",
+                                "url": "string"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "reviews": {
+                        "data": [
+                            {
+                                "id": "string",
+                                "source": "string",
+                                "rating": 0,
+                                "url": "string",
+                                "updated": "2019-08-24T14:15:22Z"
+                            }
+                        ],
+                        "limit": 0,
+                        "count": 0,
+                        "nextPageToken": "string"
+                    },
+                    "hashtags": ["nightout", "family", "livemusic", "dinner", "romantic"]
+                }
+            ]
+        }
+    }
+}

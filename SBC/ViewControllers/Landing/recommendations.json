@@ -1,0 +1,129 @@
+{
+    "data": [
+        {
+            "recommendations": [
+                {
+                    "id": "recBapy6cUiSGdiz9",
+                    "title": "sushi bar_test",
+                    "likeCount": 0,
+                    "placeCount": 0,
+                    "isLiked": false,
+                    "hasDeals": false,
+                    "hasRequestedVenue": false
+                },
+                {
+                    "id": "recLko0TMBF414J83",
+                    "title": "Take away restaurants_test",
+                    "likeCount": 0,
+                    "placeCount": 1,
+                    "isLiked": false,
+                    "hasDeals": false,
+                    "hasRequestedVenue": false
+                },
+                {
+                    "id": "rec9qcvnkaNaz4pQt",
+                    "title": "Junk world_test",
+                    "likeCount": 0,
+                    "placeCount": 1,
+                    "isLiked": false,
+                    "hasDeals": false,
+                    "hasRequestedVenue": false
+                },
+                {
+                    "id": "recrciYIfbTSN1kxP",
+                    "title": "occasional dine in_test",
+                    "likeCount": 0,
+                    "placeCount": 0,
+                    "isLiked": false,
+                    "hasDeals": false,
+                    "hasRequestedVenue": false
+                },
+                {
+                    "id": "recbmaKDFFW9U5KGX",
+                    "title": "favourite pubs_test",
+                    "likeCount": 0,
+                    "placeCount": 0,
+                    "isLiked": false,
+                    "hasDeals": false,
+                    "hasRequestedVenue": false
+                },
+                {
+                    "id": "recLq2Do2xkcnrS4t",
+                    "title": "Friends meet_test",
+                    "likeCount": 0,
+                    "placeCount": 1,
+                    "isLiked": false,
+                    "hasDeals": false,
+                    "hasRequestedVenue": false
+                },
+                {
+                    "id": "recXKd0dg4nWLemPH",
+                    "title": "Special Occasion_test",
+                    "likeCount": 0,
+                    "placeCount": 0,
+                    "isLiked": false,
+                    "hasDeals": false,
+                    "hasRequestedVenue": false
+                }
+            ],
+            "type": "Playlist"
+        },
+        {
+            "recommendations": [
+                {
+                    "id": "C8384",
+                    "name": "Testing 3",
+                    "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/1a/14/dc/12/authentic-south-indian.jpg",
+                    "category": "Indian",
+                    "area": "Singapore",
+                    "starRating": 4.2,
+                    "reviewCount": 0,
+                    "likeCount": 0,
+                    "priceBracket": 3,
+                    "hasDeals": false,
+                    "isLiked": false
+                },
+                {
+                    "id": "C8383",
+                    "name": "Testing 2",
+                    "imageUrl": "https://drop.ndtv.com/albums/COOKS/pasta-vegetarian/pastaveg_640x480.jpg",
+                    "category": "Mexican",
+                    "area": "Singapore",
+                    "starRating": 4.0,
+                    "reviewCount": 0,
+                    "likeCount": 0,
+                    "priceBracket": 2,
+                    "hasDeals": false,
+                    "isLiked": false
+                },
+                {
+                    "id": "C8382",
+                    "name": "Testing data",
+                    "imageUrl": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80",
+                    "category": "Asian",
+                    "area": "London",
+                    "starRating": 4.3,
+                    "reviewCount": 0,
+                    "likeCount": 0,
+                    "priceBracket": 1,
+                    "hasDeals": false,
+                    "isLiked": false
+                },
+                {
+                    "id": "123456",
+                    "name": "test venue 1",
+                    "imageUrl": "https://post.healthline.com/wp-content/uploads/2020/09/healthy-eating-ingredients-1200x628-facebook-1200x628.jpg",
+                    "category": "Mexican",
+                    "area": "Tanjong Pagar",
+                    "starRating": 1.0,
+                    "reviewCount": 0,
+                    "likeCount": 0,
+                    "priceBracket": 1,
+                    "hasDeals": false,
+                    "isLiked": false
+                }
+            ],
+            "type": "Venue"
+        }
+    ]
+}
